@@ -14,8 +14,8 @@ layout: default
                     {% if post.content_warnings %} &bullet; Contains {{ post.content_warnings|join:', ' }}{% endif %}
                 </small>
             </h3>
-            <div class="excerpt">{{ site.posts[0].excerpt }}</div>
-            <p class="more"><em><a href="{{ site.posts[0].url }}">Read more</a></em></p>
+            <div class="excerpt">{{ post.excerpt }}</div>
+            <p class="more"><em><a href="{{ post.url }}">Read more</a></em></p>
             <hr />
         </div>
     {% else %}
