@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="post">
+    <section class="content">
     <p>
     What does it mean to be <em>Post-Self</em>?
     </p>
@@ -19,6 +20,7 @@ layout: default
     What does it mean to be <em>Post-Self</em>?
     </p>
     <hr />
+    </section>
 </div>
 
 *Post-Self* is a **collaborative** fiction project designed to explore the implications of a universe where the sense of self can be blurred, split, or demolished through replication into *instances*.  There is a description of [the universe](/about/universe) in which the stories take place and some [shared characters](/about/characters) which authors may use, and the [existing entries](/entries) posted from the creators involved in the project upon which to build.
