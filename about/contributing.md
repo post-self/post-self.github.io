@@ -30,7 +30,7 @@ Some examples of content warnings might be:
 
 Ratings and content warnings are simply warnings regarding content for folks who don't want to see it at that moment/ever, and not intended to restrict viewership. They are also not tags, so they're not searchable or anything. Ratings are required, and content warnings are optional.
 
-### The mechanics
+## The mechanics
 
 One may contribute to *Post-Self*, either modifying the site or adding a story, through [GitHub](https://github.com/post-self/post-self.github.io). Accounts at GitHub are free, of course, and will let you contribute to this project and many others.
 
@@ -39,8 +39,15 @@ The usage of GitHub and git to work with a project like this are beyond the scop
 1. Fork the [post-self.github.io](https://github.com/post-self/post-self.github.io) repository
 2. Create a new branch with your changes or added story
 3. Create a pull-request against [post-self/post-self.github.io] with your changes
-4. Those with editorial access will review and merge your changes, or offer up some suggestions for changes to make
-5. When your changes land, they'll automatically go live on the site
+4. Make sure CI passes (site is built, links are checked)
+5. Those with editorial access will review and merge your changes, or offer up some suggestions for changes to make
+6. When your changes land, they'll automatically go live on the site
+
+### "But I don't want to deal with Jekyll!"
+
+You can [create an issue](https://github.com/post-self/post-self.github.io/issues/new) on the project and attach a file there, and it will get added to the site.
+
+You can also [email Makyo](mailto:makyo+post-self@drab-makyo.com) your stories and she'll add them with proper attribution, but this is a last resort `:)`
 
 ### Writing for Jekyll
 
@@ -144,12 +151,6 @@ Which will produce the following:
 </div>
 
 Available licenses are available in the [licenses folder](https://github.com/post-self/post-self.github.io/tree/master/_includes/license).
-
-### "But I don't want to deal with Jekyll!"
-
-You can [create an issue](https://github.com/post-self/post-self.github.io/issues/new) on the project and attach a file there, and it will get added to the site.
-
-You can also [email Makyo](mailto:makyo+post-self@drab-makyo.com) your stories and she'll add them with proper attribution, but this is a last resort `:)`
 
 ### Resources
 

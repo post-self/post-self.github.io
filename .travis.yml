@@ -5,4 +5,4 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 install: bundle install
-script: bundle exec jekyll build && bundle exec htmlproofer ./_site --disable-external
+script: make check
