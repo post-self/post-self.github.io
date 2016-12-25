@@ -2,10 +2,31 @@
 
 <html>
     <head>
-        <title>Post-Self | {{ page.title }}</title>
+        <title>Post-Self{% if page.title %} | {{ page.title }}{% endif %}</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {% if page.author_text %}{{ page.author_text|xml_escape }}{% else %}{{ page.author }}{% endif %}{% endif %}{% endif %}" />
+
+        <!-- OpenGraph metadata -->
+        {% if page.title %}
+            <meta property="og:title" content="{{ page.title }}" />
+        {% else %}
+            <meta property="og:title" content="Post-Self" />
+        {% endif %}
+        <meta property="og:site_name" content="Post-Self" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="{{ '/assets/logo.png' | absolute_url }}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        <meta property="og:description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {% if page.author_text %}{{ page.author_text|xml_escape }}{% else %}{{ page.author }}{% endif %}{% endif %}{% endif %}" />
+
+        <!-- Twitter Card metadata -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@post_self" />
+        <meta name="twitter:title" content="Post-Self{% if page.title %} | {{ page.title|xml_escape }}{% endif %}" />
+        <meta name="twitter:description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {% if page.author_text %}{{ page.author_text|xml_escape }}{% else %}{{ page.author }}{% endif %}{% endif %}{% endif %}" />
+        <meta name="twitter:image" content="{{ '/assets/logo.png' | absolute_url }}" />
+
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Ubuntu|Ubuntu+Mono" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -13,7 +34,7 @@
     <body>
         <header>
             <div class="wrapper">
-                <h1><a href="/"><img src="/assets/logo.png" alt="logo" /> Post-Self</a></h1>
+                <h1><a href="/"><img src="/assets/logo.png" alt="[logo]" /> Post-Self</a></h1>
                 <nav>
                     <ul>
                         <li><a href="/">Home</a></li>
