@@ -1,0 +1,3 @@
+<p class="license">
+&copy; {{ include.year }} {{ include.author }}
+</p>
