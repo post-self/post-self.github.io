@@ -23,6 +23,7 @@ permalink: pretty
 
 # Build settings
 markdown: kramdown
+exclude: [vendor]
 gems:
   - jekyll-feed
   - jekyll-paginate

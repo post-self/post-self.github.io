@@ -1,0 +1,26 @@
+# Instructions:
+# Create a top-level entry with a username for linking (starts with a letter,
+# contains letters, numbers, and underscores). Within that entry, you will need
+# a uri entry which must be http://post-self.io/about/creators#<id> where <id>
+# is the key for the top-level entry (this is for jekyll-feed, which needs to
+# know how to link to your profile), a name for displaying, a bio (markdown is
+# permitted), and an optional metadata list, which contains a list of objects.
+#
+# Supported metadata types are:
+#   * twitter
+#   * github
+#   * website
+#
+# Keep this file ordered alphabetically.
+makyo:
+  uri: http://post-self.io/about/creators#makyo
+  name: Madison "Makyo" Scott-Clary
+  metadata:
+    - type: twitter
+      value: drab_makyo
+    - type: github
+      value: makyo
+    - type: website
+      value: http://drab-makyo.com
+  bio: |
+    Makyo is an author, programmer, and composer living outside of Loveland, CO. She's decidedly trans, aggressively poly, kinda ace, and hecka queer. She spends her time writing and thinking about furry, postfurry, and community when not working in tech.

@@ -79,13 +79,10 @@ Required entries:
 Optional entries:
 
 * `author` --- your linkable name (see below); leaving this blank makes a story anonymous
-* `author_text` --- the text for your name (requires `author` to also be used)
 * `content_warnings` --- a list of content warnings as described above
 * `excerpt_separator` or `excerpt` --- described below
 
-You can attribute your story to yourself by adding an `author` entry (and, optionally, an `author_text` entry if you don't want just your linkable name shown) in the front-matter. If this is your first time writing for *PS*, you should add an entry in `/about/creators.md` for yourself (there's some instructions in the file), too.
-
-`author` should be considered a username (letters, numbers, underscores, and dashes), which will be used to link to an entry on the [creators page](/about/creators). `author_text`, if it's used, is what will be displayed (otherwise `author` is displayed). For example, setting `author` to `makyo` will attribute entries to `makyo` and link to 'Madison "Makyo" Scott-Clary' on the creators page. Setting `author` to `makyo` and `author_text` to 'Madison "Makyo" Scott-Clary' creates the same link, but with the full name as text.
+You can attribute your story to yourself by adding an `author` entry in the front-matter. If this is your first time writing for *PS*, you need to add an entry in `_data/authors.yml` for yourself (there's some instructions in the file), too.
 
 #### Excerpts
 

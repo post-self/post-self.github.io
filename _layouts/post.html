@@ -8,7 +8,7 @@ layout: base
         {{ page.date | date: "%b %-d, %Y" }} &bullet;
         {% if page.author %}
             <a href="/about/creators#{{ page.author }}">
-                {% if page.author_text %}{{ page.author_text }}{% else %}{{ page.author }}{% endif %}
+                {{ site.data.authors[page.author].name }}
             </a>
         {% else %}
             <em>Anonymous</em>
@@ -19,11 +19,11 @@ layout: base
     </section>
 </div>
 
-<div class="comments">
+<div class="comments expandable">
     <h2>Comments <span class="caret"></span></h2>
     <input class="expand-trigger" type="checkbox" />
     <p>Before posting a comment, be sure to read the <a href="/conduct">code of conduct</a>.</p>
-    <div id="disqus_thread"></div>
+    <div id="disqus_thread" class="expand-content"></div>
 </div>
 
 <script>
