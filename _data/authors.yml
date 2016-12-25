@@ -13,8 +13,8 @@
 #
 # Keep this file ordered alphabetically.
 makyo:
-  uri: http://post-self.io/about/creators#makyo  # must be /about/creators#<id>
-  name: Madison "Makyo" Scott-Clary  # required
+  uri: http://post-self.io/about/creators#makyo
+  name: Madison "Makyo" Scott-Clary
   metadata:
     - type: twitter
       value: drab_makyo
@@ -22,6 +22,5 @@ makyo:
       value: makyo
     - type: website
       value: http://drab-makyo.com
-  # Bio is required (Markdown allowed)
   bio: |
     Makyo is an author, programmer, and composer living outside of Loveland, CO. She's decidedly trans, aggressively poly, kinda ace, and hecka queer. She spends her time writing and thinking about furry, postfurry, and community when not working in tech.
