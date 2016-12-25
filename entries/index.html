@@ -9,7 +9,7 @@ layout: default
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 <small>
                     {{ post.date | date: "%b %-d, %Y" }}
-                    {% if post.author %} &bullet; <a href="/about/creators#{{ post.author }}">{% if post.author_text %}{{ post.author_text }}{% else %}{{ post.author }}{% endif %}</a>{% endif %}
+                    {% if post.author %} &bullet; <a href="{{ site.data.authors[post.author].uri }}">{{ site.data.authors[post.author].name }}</a>{% endif %}
                     {% if post.rating %} &bullet; Rating: {{ post.rating }}{% endif %}
                     {% if post.content_warnings %} &bullet; Contains {{ post.content_warnings|join:', ' }}{% endif %}
                 </small>

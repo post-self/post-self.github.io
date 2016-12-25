@@ -60,6 +60,12 @@ img {
     vertical-align: middle;
 }
 
+a svg {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+
 header, footer {
     position: relative;
     padding: 1em 0;
@@ -229,22 +235,22 @@ article {
             }
         }
 
-        .excerpt {
-            @extend %callout;
-
-            p:first-of-type {
-                margin-top: 0;
-            }
-
-            p:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-
         .more {
             margin-top: 0;
             text-align: right;
         }
+    }
+}
+
+.excerpt {
+    @extend %callout;
+
+    p:first-of-type {
+        margin-top: 0;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
     }
 }
 
@@ -268,7 +274,11 @@ article {
 
 .comments {
     margin-top: 3em;
+}
+
+.expandable {
     position: relative;
+    padding-bottom: 1em;
 
     .expand-trigger {
         position: absolute;
@@ -282,12 +292,28 @@ article {
         cursor: pointer;
     }
 
-    #disqus_thread {
-        display: none;
+    .expand-content {
+        overflow-y: scroll;
+        max-height: 0;
+        -webkit-transition: max-height 0.5s ease;
+        transition: max-height 0.5s ease;
     }
 
-    .expand-trigger:checked ~ #disqus_thread {
-        display: block;
+    .expand-trigger:checked ~ .expand-content {
+        max-height: 400px;
+        -webkit-transition: max-height 0.5s ease;
+        transition: max-height 0.5s ease;
+    }
+}
+
+.metadata {
+    font-family: $sans-serif;
+    font-size: 12px;
+    margin-top: -1em;
+    margin-bottom: 1em;
+
+    .datum:not(:last-of-type):after {
+        content: ' • ';
     }
 }
 

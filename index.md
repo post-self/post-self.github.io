@@ -28,20 +28,21 @@ layout: default
 {% if site.posts.size > 0 %}
 -----
 
+{% assign post = site.posts[0] %}
 <div class="entries">
     <h2>Most recent</h2>
     <div class="entry">
         <h3>
-            <a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
             <small>
-                {{ site.posts[0].date | date: "%b %-d, %Y" }}
-                {% if site.posts[0].author %} &bullet; <a href="/about/creators#{{ site.posts[0].author }}">{% if site.posts[0].author_text %}{{ site.posts[0].author_text }}{% else %}{{ site.posts[0].author }}{% endif %}</a>{% endif %}
+                {{ post.date | date: "%b %-d, %Y" }}
+                {% if post.author %} &bullet; <a href="/about/creators#{{ post.author }}">{{ site.data.authors[post.author].name }}</a>{% endif %}
                 {% if post.rating %} &bullet; Rating: {{ post.rating }}{% endif %}
                 {% if post.content_warnings %} &bullet; Contains {{ post.content_warnings|join:', ' }}{% endif %}
             </small>
         </h3>
-        <div class="excerpt">{{ site.posts[0].excerpt }}</div>
-        <p class="more"><em><a href="{{ site.posts[0].url }}">Read more</a></em></p>
+        <div class="excerpt">{{ post.excerpt }}</div>
+        <p class="more"><em><a href="{{ post.url }}">Read more</a></em></p>
     </div>
 </div>
 
