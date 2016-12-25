@@ -1,3 +1,3 @@
 # Post-Self
 
-Post-Self is a collaborative fiction project exploring a post-self universe.
+[*Post-Self*](https://post-self.github.io) is a collaborative fiction project exploring a post-self universe.
