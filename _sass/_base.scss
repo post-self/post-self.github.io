@@ -149,10 +149,8 @@ article {
 
     // I like this font, but it's a little tight when mixing italics and
     // non-italics in the same paragraph
-    em:after {
-        content: ' ';
-        display: inline-block;
-        width: 3px;
+    em {
+        padding-right: 3px;
     }
 
     .license {
