@@ -18,7 +18,7 @@ email: makyo+post-self@drab-makyo.com
 description: >
   Post-Self is a collaborative fiction project exploring a post-self universe.
 baseurl: ""
-url: "https://post-self.github.io"
+url: "http://post-self.io"
 permalink: pretty
 
 # Build settings
@@ -26,5 +26,6 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 paginate: 5
 paginate_path: '/entries/:num/'

@@ -3,8 +3,20 @@ layout: base
 ---
 
 <div class="post">
-    <h2>{{ page.title }}</h2>
-    {{ content }}
+    <h2 class="title">{{ page.title }}</h2>
+    <section class="attribution">
+        {{ page.date | date: "%b %-d, %Y" }} &bullet;
+        {% if page.author %}
+            <a href="/about/creators#{{ page.author }}">
+                {% if page.author_text %}{{ page.author_text }}{% else %}{{ page.author }}{% endif %}
+            </a>
+        {% else %}
+            <em>Anonymous</em>
+        {% endif %}
+    </section>
+    <section class="content">
+        {{ content }}
+    </section>
 </div>
 
 <div class="comments">

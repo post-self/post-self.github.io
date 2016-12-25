@@ -10,11 +10,12 @@ layout: default
                 <small>
                     {{ post.date | date: "%b %-d, %Y" }}
                     {% if post.author %} &bullet; <a href="/about/creators#{{ post.author }}">{% if post.author_text %}{{ post.author_text }}{% else %}{{ post.author }}{% endif %}</a>{% endif %}
-                    {% if post.meta %} &bullet; {{ post.meta }}{% endif %}
+                    {% if post.rating %} &bullet; Rating: {{ post.rating }}{% endif %}
+                    {% if post.content_warnings %} &bullet; Contains {{ post.content_warnings|join:', ' }}{% endif %}
                 </small>
             </h3>
-            <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-            <p><em><a href="{{ post.url }}">Read more</a></em></p>
+            <div class="excerpt">{{ site.posts[0].excerpt }}</div>
+            <p class="more"><em><a href="{{ site.posts[0].url }}">Read more</a></em></p>
             <hr />
         </div>
     {% else %}

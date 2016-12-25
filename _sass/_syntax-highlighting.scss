@@ -2,9 +2,7 @@
  * Syntax highlighting styles
  */
 .highlight {
-    background-color: #444;
-    padding: 5px;
-    border-radius: 3px;
+    @extend %callout;
 
     pre { background-color: #272822; }
     .hll { background-color: #272822; }

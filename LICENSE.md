@@ -5,7 +5,7 @@ title: License
 
 Entries on this site are &copy; their authors on or before the date of posting and may contain additional licensing information.
 
-The text on this site *except entries* is available under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+The text on this site *except entries* is available under [Creative Commons Attribution-ShareAlike 4.0 International License][CC] [![license image](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)][CC]
 
 The source code for this site is available under an MIT open source license:
 
@@ -30,3 +30,5 @@ The source code for this site is available under an MIT open source license:
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
+
+[CC]: http://creativecommons.org/licenses/by-sa/4.0/

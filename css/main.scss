@@ -6,6 +6,15 @@ $dark: #333;
 $border: darken($dark, 10%);
 $link-regular: #fab;
 $link-visited: darken($link-regular, 25%);
+$serif: "Cormorant Garamond", serif;
+$sans-serif: "Ubuntu", sans-serif;
+$monospace: "Ubuntu Mono", monospace;
+
+%callout {
+    background-color: #444;
+    padding: 5px;
+    border-radius: 3px;
+}
 
 @import
         "base",
