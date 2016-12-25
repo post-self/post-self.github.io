@@ -1,0 +1,14 @@
+---
+---
+
+$light: #eee;
+$dark: #333;
+$border: darken($dark, 10%);
+$link-regular: #fab;
+$link-visited: darken($link-regular, 25%);
+
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
