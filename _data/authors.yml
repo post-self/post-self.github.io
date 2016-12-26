@@ -1,7 +1,7 @@
 # Instructions:
 # Create a top-level entry with a username for linking (starts with a letter,
 # contains letters, numbers, and underscores). Within that entry, you will need
-# a uri entry which must be http://post-self.io/about/creators#<id> where <id>
+# a uri which must be http://post-self.io/about/contributors#<id> where <id>
 # is the key for the top-level entry (this is for jekyll-feed, which needs to
 # know how to link to your profile), a name for displaying, a bio (markdown is
 # permitted), and an optional metadata list, which contains a list of objects.
@@ -13,7 +13,7 @@
 #
 # Keep this file ordered alphabetically.
 makyo:
-  uri: http://post-self.io/about/creators#makyo
+  uri: http://post-self.io/about/contributors#makyo
   name: Madison "Makyo" Scott-Clary
   metadata:
     - type: twitter

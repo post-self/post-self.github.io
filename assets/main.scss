@@ -16,8 +16,16 @@ $monospace: "Ubuntu Mono", monospace;
     border-radius: 3px;
 }
 
+%clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+    "layout",
+    "base",
+    "syntax-highlighting"
 ;
