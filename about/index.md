@@ -8,4 +8,4 @@ As a work of collaborative fiction, *Post-Self* maintains cohesion through a sha
 * [Contributing](contributing)
 * [Universe](universe)
 * [Characters](characters)
-* [Creators](creators)
+* [Contributors](contributors)

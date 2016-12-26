@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="entries">
+    {% for post in site.categories.entry %}
+        {% include entry.html post=post %}
+    {% else %}
+        <em>No entries</em>
+    {% endfor %}
+</div>
