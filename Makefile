@@ -10,7 +10,7 @@ check:
 	@ echo "Checking for duplicate permalinks..."
 	@ ( \
 	src=`find entry/_posts -name "????-??-??-*.md" | wc -l`; \
-	dest=`find _site/entry -d 1 | wc -l`; \
+	dest=`find _site/entry -depth 1 | wc -l`; \
 	if [ $$src -ne $$dest ]; then \
 		echo "!!! Source was $$src"; \
 		echo "!!! Dest was   $$dest"; \
