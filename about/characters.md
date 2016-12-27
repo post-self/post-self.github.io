@@ -53,7 +53,7 @@ Dissolution strategy
 :   Tasker
 
 Occupation
-:   Assassin. Guōwēi#core works as a reputation exchange organization, as far as he knows. His employer often requires that he fork an instance for 'travel' to other sims. The instance is actually taken away and giving the task of assassinating a target, and then terminated. The 'exchange' prevents any merger and the instance is terminated. Guōwēi believes this is for client confidentiality. Guōwēi suspects foul play.
+:   Assassin. Guōwēi#core works as an employee for a reputation exchange organization, as far as he knows. His employer often requires that he fork an instance for 'travel' to other sims. The instance is actually taken away and giving the task of assassinating a target, and then terminated. The 'exchange' prevents any merger and the instance is terminated. Guōwēi believes this is for client confidentiality. Guōwēi suspects foul play.
 
 Entries
 :   *None yet*
