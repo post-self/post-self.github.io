@@ -38,7 +38,7 @@ The usage of GitHub and git to work with a project like this are beyond the scop
 
 1. Fork the [post-self.github.io](https://github.com/post-self/post-self.github.io) repository
 2. Create a new branch with your changes or added story
-3. Create a pull-request against [post-self/post-self.github.io] with your changes
+3. Create a pull-request against `post-self/post-self.github.io` with your changes
 4. Make sure CI passes (site is built, links are checked)
 5. Those with editorial access will review and merge your changes, or offer up some suggestions for changes to make
 6. When your changes land, they'll automatically go live on the site
@@ -73,7 +73,7 @@ Once upon a time, there was a very small fox who couldn't type because keyboards
 
 #### Posts
 
-If you're writing a story, you must name the file with the date it will be published and the title all lowercase and dash-ified, like so: `YYYY-MM-DD-the-title.md`. All stories go in the folder named `_posts`.
+If you're writing a story, you must name the file with the date it will be published and the title all lowercase and dash-ified, like so: `YYYY-MM-DD-the-title.md`. All stories go in the folder named `entry/_posts`.
 
 Posts have a few required and a few optional entries that belong in their frontmatter.
 

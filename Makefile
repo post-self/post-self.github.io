@@ -4,13 +4,20 @@ run:
 	bundle exec jekyll serve -w
 
 .PHONY: check
-check:
-	bundle exec jekyll build
+check: check-permalinks htmlproofer
+
+.PHONY: build
+build:
+	bundle exec jekyll build --verbose
+
+.PHONY: check-permalinks
+check-permalinks: build
 	@ echo
 	@ echo "Checking for duplicate permalinks..."
+	# Ensure that each post generates its own index.html file
 	@ ( \
 	src=`find entry/_posts -name "????-??-??-*.md" | wc -l`; \
-	dest=`ls _site/entry | wc -w`; \
+	dest=`find _site/entry -name index.html | wc -l`; \
 	if [ $$src -ne $$dest ]; then \
 		echo "!!! Source was $$src"; \
 		echo "!!! Dest was   $$dest"; \
@@ -20,6 +27,9 @@ check:
 	)
 	@ echo "No duplicates found, but that was a simple test. Check by hand!"
 	@ echo
+
+.PHONY: htmlproofer
+htmlproofer:
 	bundle exec htmlproofer _site \
 		--check-favicon \
 		--check-html \
