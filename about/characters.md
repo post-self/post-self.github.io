@@ -42,6 +42,7 @@ Entries
 :   *None yet*
 
 ### {% include names/qian-guowei %}
+{: id="qian-guowei" }
 
 Name
 :   {{ site.data.characters.qian-guowei.name.zh }} - <span class="sans-serif">[t͡ɕʰi:an gʷo we:i]</span> (surname: {{ site.data.characters.qian-guowei.name.family }}, given name: {{ site.data.characters.qian-guowei.name.given }})
