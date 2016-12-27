@@ -5,11 +5,7 @@ title: The Post-Self Universe
 
 The *Post-Self* universe is far down a timeline from our own. Uploading of conscious entities (sensoria) became a commonly accepted solution to overpopulation, while embodied folks went about business of their own. However, since the first groups of uploaded individuals tended to be programmers, fancying themselves to be very busy, they quickly evolved ways to fork themselves to work in parallel supporting the network in which they dwelled.
 
-As the network grew and uploading became more popular, more and more individuals joined. Not just programmers, either, but folks of all persuasions. The idea of forking evolved and spread, leading to the concepts of dissolution and merging.
-
-### Exocortices
-
-Exocortices began as ways to store data in an easily accessible fashion for perusal later --- basically cellphones accessible through a neuro interface --- but later transitioned into memory modules that weren't active until accessed directly.
+As the network grew and uploading became more popular, more and more individuals joined. Not just programmers, either, but folks of all persuasions. The idea of forking evolved and spread, leading to the concepts of dissolution and merging. Embodied life remained embodied life, but within the network, forking and dissolution became a practice of its own.
 
 ### Politics and economy
 
@@ -44,3 +40,7 @@ There are two generally recognized merge strategies:
 * `blithe` --- most common among Dispersionistas, this merge strategy relies on a recursive algorithm which attempts to merge the entirety of instances' sensoria while producing as few conflicts as possible (conflicts, obviously undesirable, tend to lead to neurological sequelae that can cause an instance to crash). There are two primary substrategies which help in automatically resolving conflicts:
     * `theirs` --- when encountering a conflict, the conflicting portion of the halted instance's state is kept.
     * `ours` --- when encountering a conflict, the conflicting portion of the base instance's state is kept.
+
+### Exocortices
+
+Exocortices began as ways to store data in an easily accessible fashion for perusal later --- basically cellphones accessible through a neuro interface --- but the concept later transitioned into memory modules that weren't active until accessed directly. Things you could forget until deciding (or instructed) to remember.
