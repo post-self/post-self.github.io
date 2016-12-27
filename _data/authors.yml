@@ -11,10 +11,10 @@
 #   * github
 #   * website
 #
-# Keep this file ordered alphabetically.
+# Keep this file ordered alphabetically by username. A suggestion, given the style in which branches are notated in the PS universe, would be to structure the name entry as "Proper Name#username" and mention instances in your bio.
 makyo:
   uri: http://post-self.io/about/contributors#makyo
-  name: Madison "Makyo" Scott-Clary
+  name: Madison Scott-Clary#makyo
   metadata:
     - type: twitter
       value: drab_makyo
@@ -22,5 +22,8 @@ makyo:
       value: makyo
     - type: website
       value: http://drab-makyo.com
+  strategies:
+    dissolution: Tracker
+    merge: experiential cherrypick
   bio: |
-    Makyo is an author, programmer, and composer living outside of Loveland, CO. She's decidedly trans, aggressively poly, kinda ace, and hecka queer. She spends her time writing and thinking about furry, postfurry, and community when not working in tech.
+    Madison is an author, programmer, and composer living outside of Loveland, CO. She's decidedly trans, aggressively poly, kinda ace, and hecka queer. This instance spends her time writing and thinking about furry, postfurry, and community when not working in tech. 

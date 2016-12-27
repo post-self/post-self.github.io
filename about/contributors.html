@@ -5,14 +5,20 @@ title: Creators
 
 {% for author_hash in site.data.authors %}
 {% assign author = author_hash[1] %}
-<h3 id="{{ author_hash[0] }}">{{ author.name }}</h3>
+<h3 id="{{ author_hash[0] }}" class="author-name">{{ author.name }}</h3>
 <div class="metadata">
     {% for datum in author.metadata %}
         <span class="datum">{% include metadata/{{ datum.type }} value=datum.value %}</span>
     {% endfor %}
+    {% if author.strategies %}
+        <div class="metadata">
+            <span class="datum">Dissolution strategy: <em>{{ author.strategies.dissolution }}</em></span>
+            <span class="datum">Preferred merge strategy: <em>{{ author.strategies.merge }}</em></span>
+        </div>
+    {% endif %}
 </div>
 
-<div class="excerpt">{{ author.bio|markdownify }}</div>
+<div class="excerpt author-bio">{{ author.bio|markdownify }}</div>
 
 <div class="news expandable">
     <h4>Posts <span class="caret"></span></h4>
