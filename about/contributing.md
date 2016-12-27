@@ -150,7 +150,15 @@ Which will produce the following:
 {% include license/cc-by-sa-4.0 author='Madison Scott-Clary' year='2016' %}
 </div>
 
-Available licenses are available in the [licenses folder](https://github.com/post-self/post-self.github.io/tree/master/_includes/license).
+Available licenses are available in the [licenses folder](https://github.com/post-self/post-self.github.io/tree/master/_includes/license). Feel free to add your own!
+
+#### Other includes
+
+Feel free to add any other includes in the `_includes` directory that you want. For example, if you have a hard-to-type name, you can create an include for that. For instnce {% include names/qian-guowei-zh %} is pretty hard to type, so it is included in the `_includes/names/qian-guowei-zh`, which is included with `{% raw %}{% include names/qian-guowei-zh %}{% endraw %}`.
+
+Note that many editors will automatically include a newline at the end of files, which can mess up formatting, so be sure to turn that off. However, another solution is to add the included text in a file in `_data`. For an example of this, see `_data/characters`. You can then include text with `{% raw %}{{ site.data.characters.qian-guowei.name.zh }}{% endraw %}` which produces {{ site.data.characters.qian-guowei.name.zh }} as expected.
+
+This goes beyond just names, though, as it applies to licenses and metadata, such as {% include metadata/twitter value="post_self" %} which can be generated with `{% raw %}{% include metadata/twitter value="post_self" %}{% endraw }`.
 
 ### Resources
 
