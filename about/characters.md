@@ -41,19 +41,27 @@ Occupation
 Entries
 :   *None yet*
 
-### Qián Guōwēi
+### {% include names/qian-guowei %}
 
 Name
-:   钱郭威 - <span class="sans-serif">[t͡ɕʰi:an gʷo we:i]</span> (surname: Qian, given name: Guo Wei)
+:   {{ site.data.characters.qian-guowei.name.zh }} - <span class="sans-serif">[t͡ɕʰi:an gʷo we:i]</span> (surname: {{ site.data.characters.qian-guowei.name.family }}, given name: {{ site.data.characters.qian-guowei.name.given }})
 
 Pronouns
-:   Qián#core: he/him/his/himself; instances vary
+:   {% include names/qian-guowei %}#core: he/him/his/himself; instances vary
 
 Dissolution strategy
 :   Tasker
 
 Occupation
-:   Assassin. Guōwēi#core works as an employee for a reputation exchange organization, as far as he knows. His employer often requires that he fork an instance for 'travel' to other sims. The instance is actually taken away and giving the task of assassinating a target, and then terminated. The 'exchange' prevents any merger and the instance is terminated. Guōwēi believes this is for client confidentiality. Guōwēi suspects foul play.
+:   Assassin. {{ site.data.characters.qian-guowei.name.full }}#core works as an employee for a reputation exchange organization, as far as he knows. His employer often requires that he fork an instance for 'travel' to other sims. The instance is actually taken away and giving the task of assassinating a target, and then terminated. The 'exchange' prevents any merger and the instance is terminated. {{ site.data.characters.qian-guowei.name.given }} believes this is for client confidentiality. {{ site.data.characters.qian-guowei.name.given }} suspects foul play.
+
+Meta
+:   For ease of use, name includes can be used:
+
+    * `{% raw %}{{ site.data.characters.qian-guowei.name.given }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.given }}
+    * `{% raw %}{{ site.data.characters.qian-guowei.name.family }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.family }}
+    * `{% raw %}{{ site.data.characters.qian-guowei.name.full }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.full }}
+    * `{% raw %}{{ site.data.characters.qian-guowei.name.ah }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.zh }}
 
 Entries
 :   *None yet*
