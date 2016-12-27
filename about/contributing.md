@@ -158,7 +158,7 @@ Feel free to add any other includes in the `_includes` directory that you want. 
 
 Note that many editors will automatically include a newline at the end of files, which can mess up formatting, so be sure to turn that off. However, another solution is to add the included text in a file in `_data`. For an example of this, see `_data/characters`. You can then include text with `{% raw %}{{ site.data.characters.qian-guowei.name.zh }}{% endraw %}` which produces {{ site.data.characters.qian-guowei.name.zh }} as expected.
 
-This goes beyond just names, though, as it applies to licenses and metadata, such as {% include metadata/twitter value="post_self" %} which can be generated with `{% raw %}{% include metadata/twitter value="post_self" %}{% endraw }`.
+This goes beyond just names, though, as it applies to licenses and metadata, such as {% include metadata/twitter value="post_self" %} which can be generated with `{% raw %}{% include metadata/twitter value="post_self" %}{% endraw %}`.
 
 ### Resources
 
