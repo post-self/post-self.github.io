@@ -7,7 +7,7 @@ title: The Mechanics
 
 One may contribute to *Post-Self*, either modifying the site or adding a story, through [GitHub](https://github.com/post-self/post-self.github.io). Accounts at GitHub are free, of course, and will let you contribute to this project and many others.
 
-The usage of GitHub and git to work with a project like this are beyond the scope of this document, but there are some [resources](#resources) toward the end of this document for that. Here are the basics, though:
+The usage of GitHub and git to work with a project like this are beyond the scope of this document, but there are some [resources](/about/help/resources) toward the end of this document for that. Here are the basics, though:
 
 1. Fork the [post-self.github.io](https://github.com/post-self/post-self.github.io) repository
 2. Create a new branch with your changes or added story

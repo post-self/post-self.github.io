@@ -22,3 +22,5 @@ Merger is a game about merging. It contains at least one fox.
 ```
 
 Excerpts are described below, and are a very good idea for your post. Not having an excerpt will make the entry listing not very informative!
+
+Note that, while the entire site and all posts are proofed --- that is, files are checked for validity, links are checked that they point to real locations, images exist, and so on --- the entire `posts/` directory is omitted, so be extra sure that your included posts' links work.

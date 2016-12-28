@@ -11,7 +11,7 @@ First things first: all contributors must abide by the [code of conduct](/conduc
 
 ### Beyond stories
 
-More than just one-off stories are welcome on *PS*. You can submit any form of experience that fits within the universe. Videos, comics, paintings and artwork, even twine games. How to do so is specified [here](help/beyond-stories).
+More than just one-off stories are welcome on *PS*. You can submit any form of experience that fits within the universe. Videos, comics, paintings and artwork, even twine games. How to do so is specified [here](/about/help/beyond-stories).
 
 ### Ratings
 
