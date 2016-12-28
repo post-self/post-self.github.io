@@ -3,9 +3,14 @@ layout: default
 title: Characters
 ---
 
+{% include toc/about.md %}
+
+*Post-Self,* as a collaborative effort, does have some characters that may be used in works to add some consistency to the end products. Using them is *not* required, not by any stretch, but they're here if you'd like. If you have a good idea for a character, feel free to add it to the list!
+
 <!-- Please keep this list alphabetical -->
 
 ### Dear
+{: class="clearfix" }
 
 Name
 :   Dear, Also, The Tree That Was Felled -  of the Ode Clade

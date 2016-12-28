@@ -13,6 +13,8 @@ layout: base
         {% else %}
             <em>Anonymous</em>
         {% endif %}
+        &bullet; Rating: <a href="/about/contributing#ratings">{{ page.rating }}</a>
+        &bullet; Contains {{ page.content_warnings|join:', ' }}
     </section>
     <section class="content">
         {{ content }}

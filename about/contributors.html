@@ -3,6 +3,13 @@ layout: default
 title: Creators
 ---
 
+{% capture toc %}{% include toc/about.md %}{% endcapture %}
+{{ toc | markdownify }}
+
+<p>Contributions are open for <em>Post-Self</em>. If you wind up contributing, feel free to add yourself to this list by adding an entry to <code>_data/authors.yaml</code> (there are instructions in that file). You may also publish anonymously!</p>
+
+<span class="clearfix"></span>
+
 {% for author_hash in site.data.authors %}
 {% assign author = author_hash[1] %}
 <h3 id="{{ author_hash[0] }}" class="author-name">{{ author.name }}</h3>

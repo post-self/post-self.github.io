@@ -3,6 +3,8 @@ layout: default
 title: The Post-Self Universe
 ---
 
+{% include toc/about.md %}
+
 The *Post-Self* universe is far down a timeline from our own. Uploading of conscious entities (sensoria) became a commonly accepted solution to overpopulation, while embodied folks went about business of their own. However, since the first groups of uploaded individuals tended to be programmers, fancying themselves to be very busy, they quickly evolved ways to fork themselves to work in parallel supporting the network in which they dwelled.
 
 As the network grew and uploading became more popular, more and more individuals joined. Not just programmers, either, but folks of all persuasions. The idea of forking evolved and spread, leading to the concepts of dissolution and merging. Embodied life remained embodied life, but within the network, forking and dissolution became a practice of its own.
