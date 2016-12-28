@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Entry title
-author: makyo
+author: your name
+rating: green, yellow, or read
+content_warnings:
+    - some
+    - warnings
 ---
 
 Entry text goes here.

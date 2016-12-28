@@ -30,7 +30,7 @@ Name
 :   Ioan Balan ['jo an bə 'lan]
 
 Pronouns
-:   [ey/em/eirs/eirself](http://pronoun.is/ey)
+:   [ey/em/eir/eirself](http://pronoun.is/ey)
 
 Dissolution strategy
 :   Tasker
