@@ -7,7 +7,7 @@
 
         </small>
     </h3>
-    <span class="rating">{% if include.post.rating %}Rating: {{ include.post.rating }}{% endif %}
+    <span class="rating">{% if include.post.rating %}Rating: <a href="/about/contributing#ratings">{{ include.post.rating }}</a>{% endif %}
     {% if include.post.content_warnings %} &bullet; Contains {{ include.post.content_warnings|join:', ' }}{% endif %}</span>
     <div class="excerpt">{{ include.post.excerpt }}</div>
     <p class="more"><em><a href="{{ include.post.url }}">Read more</a></em></p>

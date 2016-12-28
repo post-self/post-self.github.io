@@ -10,7 +10,7 @@ content_warnings:
 instance: 5f39bd7
 ---
 
-The feeling of an instance merging state back with the tracker would never NOT make Ioan Balan#tracker uneasy. It wasn't the differences in experiences - those could be anticipated - so much as the tiny changes in identity that resulted. Having to internalize a slightly different version of yourself was too close to experiencing a doppelg&auml;nger. Or perhaps hanging with a sib, fresh home from a semester abroad.
+The feeling of an instance merging state back with the tracker would never NOT make Ioan Balan#tracker uneasy. It wasn't the differences in experiences, those could be anticipated, so much as the tiny changes in identity that resulted. Having to internalize a slightly different version of yourself was too close to experiencing a doppelg&auml;nger. Or perhaps hanging with a sib, fresh home from a semester abroad.
 
 Ioan#tracker had never been abroad, had no siblings. Just new memories.
 
@@ -76,7 +76,7 @@ The fear continued to well within #{{ page.instance }}, growing in intensity.
 
 -----
 
-Ioan#tracker set eir usual algorithm aside for the merger, requesting that the entirety of the instance's state, from that last ritual on, be merge with em. It wasn't the first time ey had done such a thing, but it was still rare enough for em to do so that ey had to look up how. Despite eir career depending on it, ey had never been all that good at the whole dissolution thing. Ey never even figured out how to name eir instances, relying instead on the random string of digits that the system generated for em.
+Ioan#tracker set eir usual algorithm aside for the merger, requesting that the entirety of the instance's state, from that last ritual on, be merged with em. It wasn't the first time ey had done such a thing, but it was still rare enough for em to do so that ey had to look up how. Despite eir career depending on it, ey had never been all that good at the whole dissolution thing. Ey never even figured out how to name eir instances, relying instead on the random string of digits that the system generated for em.
 
 Once that had been organized, ey moved out onto the wrap-around deck and settled into one of the Adirondack chairs out there. Such things, ey suspected, were built primarily for thinking.
 

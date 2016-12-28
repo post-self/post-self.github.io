@@ -285,6 +285,13 @@ article {
     border-left:  5px solid transparent;
 }
 
+.toc:before {
+    content: 'Contents';
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 960px) {
 
     footer .wrapper {
@@ -352,6 +359,14 @@ article {
         &:not(:last-of-type):after {
             content: ' • ';
         }
+    }
+
+    .toc {
+        max-width: 25%;
+        margin: 0 2em 1em 0;
+        padding: 0.5em 0.5em 0.5em auto;
+        float: left;
+        border: 1px solid $light;
     }
 
 }
