@@ -143,6 +143,11 @@ article {
     text-align: center;
     @extend %clearfix;
 
+
+    h3 {
+        margin: 0;
+    }
+
     .entry {
         position: relative;
         max-width: 300px;
@@ -200,24 +205,24 @@ article {
         margin-bottom: 0;
     }
 }
-
-.pagination {
-    .page {
-        width: 33%;
-        display: inline-block;
-
-        &:last-of-type {
-            width: auto;
-        }
-
-        &.previous {
-            text-align: right;
-        }
-        &.current {
-            text-align: center;
-        }
-    }
-}
+//
+// .pagination {
+//     .page {
+//         width: 33%;
+//         display: inline-block;
+//
+//         &:last-of-type {
+//             width: auto;
+//         }
+//
+//         &.previous {
+//             text-align: right;
+//         }
+//         &.current {
+//             text-align: center;
+//         }
+//     }
+// }
 
 .comments {
     margin-top: 3em;
@@ -295,13 +300,13 @@ article {
         }
     }
 
-    .post p {
+    .post .content p {
         text-indent: 2em;
     }
 
     .entries {
         .entry {
-            height: 310px;
+            height: 500px;
 
             &:not(:nth-of-type(3)) {
                 margin-right: 10px;
@@ -309,11 +314,11 @@ article {
 
             h3 {
                 margin: 0;
-                height: 90px;
+                max-height: 90px;
             }
 
             .excerpt {
-                height: 180px;
+                height: 325px;
                 overflow-y: scroll;
                 position: relative;
                 padding-top: 15px;
