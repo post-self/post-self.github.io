@@ -2,7 +2,7 @@
 layout: post
 title: Entry title
 author: your name
-rating: green, yellow, or read
+rating: green, yellow, or red
 content_warnings:
     - some
     - warnings
