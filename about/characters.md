@@ -20,6 +20,9 @@ Name
 Pronouns
 :   [it/it/its/itself](http://pronoun.is/it)
 
+Appearance
+:   Dear's instance is modeled after that of a now-extinct animal known as a fennec fox, a member of the vulpine family adapted to desert living. Dear has modified the original form to be more akin to that of humans. The iridescent white fur appears to have been a happy mistake.
+
 Dissolution strategy
 :   Dispersionista
 
@@ -36,6 +39,9 @@ Name
 
 Pronouns
 :   [ey/em/eir/eirself](http://pronoun.is/ey)
+
+Appearance
+:   Ioan is a short, slightly pudgy person of indistinct gender. Ey has bought into the identity of academic wholeheartedly, dressing in argyle vests over linen shirts, aiming for either cotton or corduroy slacks.
 
 Dissolution strategy
 :   Tasker
@@ -54,6 +60,9 @@ Name
 
 Pronouns
 :   {% include names/qian-guowei %}#core: he/him/his/himself; instances vary
+
+Appearance
+:   {{ site.data.characters.qian-guowei.guowei }} is a tall and slender chinese gentleman. He has to dress well for work, but tends to add his own snappish flair, black suit-jackets piped with sky blue, or lapels bright orange on the underside to match silk linings.
 
 Dissolution strategy
 :   Tasker

@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Post-Self{% if page.title %} | {{ page.title }}{% endif %}</title>
+        <title>Post-Self{% if page.title %} | {{ page.title }}{% if page.author %} by {{ site.data.authors[page.author].name }}{% endif %}{% endif %}</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
 
         <!-- metadata -->
         <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-        <meta name="description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {% if page.author_text %}{{ page.author_text|xml_escape }}{% else %}{{ page.author }}{% endif %}{% endif %}{% endif %}" />
+        <meta name="description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ site.data.authors[page.author].name }}{% endif %}{% endif %}" />
 
         <!-- OpenGraph metadata -->
         {% if page.title %}
@@ -24,13 +24,13 @@
         <meta property="og:type" content="website" />
         <meta property="og:image" content="{{ '/assets/logo.png' | absolute_url }}" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-        <meta property="og:description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {% if page.author_text %}{{ page.author_text|xml_escape }}{% else %}{{ page.author }}{% endif %}{% endif %}{% endif %}" />
+        <meta property="og:description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ site.data.authors[page.author].name }}{% endif %}{% endif %}" />
 
         <!-- Twitter Card metadata -->
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@post_self" />
         <meta name="twitter:title" content="Post-Self{% if page.title %} | {{ page.title|xml_escape }}{% endif %}" />
-        <meta name="twitter:description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {% if page.author_text %}{{ page.author_text|xml_escape }}{% else %}{{ page.author }}{% endif %}{% endif %}{% endif %}" />
+        <meta name="twitter:description" content="Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ site.data.authors[page.author].name }}{% endif %}{% endif %}" />
         <meta name="twitter:image" content="{{ '/assets/logo.png' | absolute_url }}" />
 
         <!-- JSON-LD metadata -->
@@ -40,7 +40,7 @@
                 "@type": "WebSite",
                 "name": "Post-Self",
                 "headline": "Post-Self{% if page.title %} | {{ page.title|xml_escape }}{% endif %}",
-                "description": "Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {% if page.author_text %}{{ page.author_text|xml_escape }}{% else %}{{ page.author }}{% endif %}{% endif %}{% endif %}",
+                "description": "Post-Self is a collaborative fiction project exploring a post-self universe{% if page.layout == 'post' %} | {{ page.title|xml_escape }} posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ site.data.authors[page.author].name }}{% endif %}{% endif %}",
                 "url": "{{ site.url }}{{ page.url }}"
             }
         </script>
