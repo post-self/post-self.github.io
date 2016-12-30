@@ -20,13 +20,10 @@ description: >
 baseurl: ""
 url: "http://post-self.io"
 permalink: '/:categories/:title/'
-paginate: 5
-paginate_path: '/news/:num/'
 
 # Build settings
 markdown: kramdown
 exclude: [vendor]
 gems:
   - jekyll-feed
-  - jekyll-paginate
   - jekyll-sitemap
