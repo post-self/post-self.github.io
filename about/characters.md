@@ -76,7 +76,7 @@ Meta
     * `{% raw %}{{ site.data.characters.qian-guowei.name.given }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.given }}
     * `{% raw %}{{ site.data.characters.qian-guowei.name.family }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.family }}
     * `{% raw %}{{ site.data.characters.qian-guowei.name.full }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.full }}
-    * `{% raw %}{{ site.data.characters.qian-guowei.name.ah }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.zh }}
+    * `{% raw %}{{ site.data.characters.qian-guowei.name.zh }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.zh }}
 
 Entries
 :   *None yet*
