@@ -47,7 +47,9 @@ tw-story {
 	transition: all 0.25s linear;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 </script><tw-passagedata pid="1" name="A night out" tags="" position="200,200">A night on the town. A bar for an aperitif. A light dinner at a modern restaurant, one of those places that turns up the taste inputs and turns down the visual inputs, so that you eat intensely delicious food amidst a thick, purple fog. Another bar, livelier and less painfully, for a digestif.
 
@@ -74,13 +76,13 @@ tw-story {
 
 *&quot;Before we begin, I would like to take a small census of those present. This is for your own sakes as well as for that of the artworks, such as they are. We&#39;ll let them know. Could you please raise your hand if you consider yourself a Tasker?&quot;*
 
-(if:$strategy is &quot;tasker&quot;)[You and your group of friends slowly raise your hands. It&#39;s damning: your group of Taskers are the only ones in the room.](else:)[A scant few hands go up in the air, all huddled in one corner of the room. Perhaps a group? A group of their own?]
+(if:$strategy is &quot;Tasker&quot;)[You and your group of friends slowly raise your hands. It&#39;s damning: your group of Taskers are the only ones in the room.](else:)[A scant few hands go up in the air, all huddled in one corner of the room. Perhaps a group? A group of their own?]
 
 Titters waft through the...the audience? The ticket holders, at least. Dear holds its face composed in a calm, polite expression.
 
 *&quot;Trackers? Raise your hands, please.&quot;*
 
-Of those who remained minus the Taskers, perhaps a third raise their hands. Several individuals, a few distinct groups(if:$strategy is &quot;tracker&quot;)[ including your own]. That leaves well more than half belonging to &amp;mdash;
+Of those who remained minus the Taskers, perhaps a third raise their hands. Several individuals, a few distinct groups(if:$strategy is &quot;Tracker&quot;)[ including your own]. That leaves well more than half belonging to &amp;mdash;
 
 *&quot;And Dispersionistas?&quot;*
 
@@ -94,7 +96,7 @@ Dear turns adroitly on its heel and without a moment&#39;s hesitation, forks. A 
 
 (link-reveal:&quot;It doesn&#39;t last.&quot;)[
 
-One instance of Dear (the original? maybe?) heads(if:$strategy is &quot;tasker&quot;)[ through the left-hand door](else:)[ [[through the left-hand door]]] and the other (the fork? it&#39;s so hard to keep track with all these people) steps [[through the right door]].]]]]]]</tw-passagedata>
+One instance of Dear (the original? maybe?) heads(if:$strategy is &quot;Tasker&quot;)[ through the left-hand door](else:)[ [[through the left-hand door]]] and the other (the fork? it&#39;s so hard to keep track with all these people) steps [[through the right door]].]]]]]]</tw-passagedata>
 <tw-passagedata pid="3" name="through the right door" tags="" position="400,400">Your group, exchanging nervous looks, heads straight for the right-hand door. (link-reveal:&quot;Perhaps that&#39;s the door that Dear had meant.&quot;)[
 
 The room you wind up in is smaller even than the foyer, and the ticketholders have to press even closer together. The audience that winds up here is the most diverse, containing the entire group of Taskers who wound up at this primarily Dispersionista event. As such, the press is met with uncomfortable silence: one doesn&#39;t normally talk about dissolution strategies with strangers, but (link-reveal:&quot;Dear has deftly forced it to be an issue.&quot;)[
@@ -105,7 +107,7 @@ There&#39;s no sign on the fox&#39;s face that it knows what it has done. Just t
 
 (link:&quot;Right.&quot;)[(link-reveal:&quot;(if:$strategy is \&quot;tasker\&quot;)[You and your friends do not feel cozy](else:)[The Taskers do not look cozy].&quot;)[
 
-You suppose it makes sense. There are bits of this that appeal to all: forking for a specific purpose, instances accomplishing goals. This was flagrant abuse of that in (if:$strategy is &quot;tasker&quot;)[your](else:)[their] eyes, however, given that these instances will likely move on and live their own lives. Independent, individual instances.
+You suppose it makes sense. There are bits of this that appeal to all: forking for a specific purpose, instances accomplishing goals. This was flagrant abuse of that in (if:$strategy is &quot;Tasker&quot;)[your](else:)[their] eyes, however, given that these instances will likely move on and live their own lives. Independent, individual instances.
 
 *&quot;I would like to elaborate on my previous point,&quot;* Dear says. *&quot;This opening is about the idea of instance creation as art, and in that sense, it&#39;s the easiest job I&#39;ve ever had. Instance creation is art.&quot;*
 
@@ -201,7 +203,7 @@ The noise doubles and then doubles again as the instances start charging at and 
 
 You realize that these instances of Dear are not actually attacking to harm the audience. There are no syringes, no coercion to quit. Just exercising, violently, the collision detection algorithms in the room.
 
-This makes you [[*furious*-&gt;Intro to fight]], but with all of the confusion within the room, you (link-reveal:&quot;hesitate.&quot;)[
+This makes you [[*furious*-&gt;Intro to fight]](if:not $rebel)[, but with all of the confusion within the room, you (link-reveal:&quot;hesitate.&quot;)[
 
 The intensity within this room is nearly overwhelming, and you find yourself shrinking toward the walls, if only to escape from the noise and motion on one side.
 
@@ -211,7 +213,7 @@ In fact, the instances of Dear seem to be encouraging it, growling and barking a
 
 You make it to the wall with relatively little trouble, and are surprised only to be jabbed in the back with a doorknob.
 
-Keeping an eye on the action and the aggressive instances of the artist, you slip a hand back behind you, moving as though being watched carefully, to [[turn the knob.-&gt;Unwind room]] ]]]</tw-passagedata>
+Keeping an eye on the action and the aggressive instances of the artist, you slip a hand back behind you, moving as though being watched carefully, to [[turn the knob.-&gt;Unwind room]] ]](else:)[.]]]</tw-passagedata>
 <tw-passagedata pid="9" name="Follow the fennec" tags="" position="250,800">A shuddering bang and sudden flood of smoke behind and to your right makes up your mind for you.
 
 Turning, you find that the fennec has skittered away to the left. As the shouts of those nearest the banging noise and cloud of smoke rise up, you find yourself doing the same, following out of a sense of instinct rather than anything resembling logic.
@@ -349,8 +351,49 @@ There&#39;s some grumbling, but folks do as they&#39;re told, splitting off into
 
 Dear follows along with the groups, forking as they split off towards the clusters of furniture so that each group winds up with its own instance of the fox. You notice that each instance is fluffier, softer, a touch heavier than the original. As a scheme to make the artist seem friendlier, it works pretty well. The new instances nearly exude kindness.
 
-[[Seduction]] 
-[[Small exhibits]] ]]</tw-passagedata>
+You marvel, for a moment, at how easily folks seem to take being shifted from the context of violence to the context of comfort. That there are a majority of Dispersionistas certainly explains part of it. The rest, you suspect, might be due to the fact that, despite those context shifts, this all took place within the overarching setting of an art exhibit. Dear had said that instances were art, and perhaps that really is the case: perhaps it&#39;s like those plays where the audience plays a role. Perhaps you and your friends, all of the audience, are the art.
+
+(link-reveal:&quot;Perhaps Dear only hung the frames.&quot;)[
+
+As if summoned by your thoughts alone, an instance of Dear pads up to your group and, by your leave, settles down on the couch beside you. If it amped up the friendliness of its build, it doubled that with its face. Teeth muted, whiskers full and slicked back, eyes bigger, ears gone from large to almost comical.
+
+*&quot;Once again, I must apologize for that stress,&quot;* it murmurs, voice low.
+
+Silence. You decide to speak up, &quot;What was the reasoning for that? Were we playing a part, like in a play?&quot;
+
+The fox smiles, *&quot;You could say that, I suppose. I prefer the term exhibit, though, as it implies that someone is watching, that you are being looked at.&quot;*
+
+It makes a graceful setting-aside gesture before you can question it on that, continuing, *&quot;Stress is a means of forcing individuals to make decisions. If there hadn&#39;t been real stress, real risk-&quot;* Again, it raises a hand to forestall objections. *&quot;-then there wouldn&#39;t have been real art to be made. Your calling it a play is accurate in that sense, in that plays are art made in real time. This is also that. Structured experience happening in real time.&quot;*
+
+It&#39;s easy to feel intrigued: the art itself is intriguing. Beyond that, though, *Dear* is intriguing. (link:&quot;Dear, with its choice of base avatar.&quot;)[(link:&quot;Dear with its mastery of the mutation algorithms used during forking.&quot;)[Dear with its casual refusal to conform.]]
+
+&quot;So what do you get out of this, then? This art?&quot;
+
+Dear grins and leans back into the couch, its tail flicking out of the way and arm draping along the back &amp;mdash; an almost familiar gesture toward you(link:&quot;.&quot;)[. One that you can&#39;t help but notice(link:&quot;.&quot;)[. One that even your friends can&#39;t help but notice.]]
+
+*&quot;That, my friend, is a very good question.&quot;*
+
+&quot;And do you have an answer?&quot;
+
+*&quot;Not a good one,&quot;* it shrugs, eloquent. *&quot;Not yet, at least.&quot;*
+
+You grin back, &quot;Well? What do you have so far?&quot;
+
+Dear laughs. Your friends roll their eyes.
+
+*&quot;Part of it&#39;s integral to us. To all of the &#39;me&#39;s here, to all of the Ode Clade, to so many Dispersionistas, and, to some extent, to all those except perhaps the most conservative.&quot;* It furrows its brow, as if digging for words, *&quot;It&#39;s evolving. Identity, I mean. It&#39;s moving beyond the romantic conception of self.&quot;*
+
+&quot;Is that why you&#39;re not hu-&quot; You stop yourself short, thinking on its words. &quot;Is that why you&#39;ve taken the shape of a...a fennec, was it?&quot;
+
+Dear turns itself to sit cross-legged on the loveseat facing you. You find yourself doing so as well, almost subconsciously.
+
+Your friends stand up.
+
+Dear-Prime, at the center of the room, calls out in a soft voice, *&quot;The next exhibits are just this way. If you&#39;ll follow me...&quot;*
+
+Dear reaches out a paw and rests it atop one of your hands, *&quot;We can [[stay and chat a bit more-&gt;Seduction]]. Don&#39;t worry,&quot;* it grins. *&quot;I&#39;m running this show, I make the rules.&quot;*
+
+Your friends are grumbling, already moving to follow Dear-prime [[to the next room.-&gt;To the small exhibits]] ]]]</tw-passagedata>
 <tw-passagedata pid="13" name="Small exhibits" tags="" position="1000,800">&lt;style&gt;
 body {
 	background-color: #eee;
@@ -370,24 +413,24 @@ unfinished
 
 ### The Wanderer
 
-(link:&quot;Exhibit&quot;)[brief description of wide open spaces $wandererSeen]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Wanderer&quot;)]
 
 ### The Rebel
 
-(link:&quot;Exhibit&quot;)[brief description of forking in second room]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Rebel&quot;)]
 
 ### The Fighter
 
-(link:&quot;Exhibit&quot;)[pursuing a fight in one of the fight rooms $fighter]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Fighter&quot;)]
 
 ### The Lover
 
-(link:&quot;Exhibit&quot;)[Dear seduces character in another room $lover]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Lover&quot;)]
 
 ### The Medium
 
 (if: $endings is 0)[This exhibit appears to be an empty pedastal]
-(else:)[you see yourself, Dear comes to talk to you]
+(else:)[(display:&quot;Include: The Medium&quot;)]
 
 [[Out on the street once more]]</tw-passagedata>
 <tw-passagedata pid="14" name="Out on the street once more" tags="" position="1200,1000">No one seems to have come out of the exhibit unscathed.(if:$knockedout)[(set:$knockedout to false)
@@ -453,10 +496,23 @@ A Twine game by &lt;a href=&quot;http://post-self.io/about/contributors#makyo&qu
 
 &lt;a href=&quot;http://post-self.io/about/characters/#dear&quot;&gt;Dear, Also, The Tree That Was Felled, of the Ode Clade&lt;/a&gt; is a free-to-use character associated with the *PS* universe, and also a fox. How cool is that?
 
+There were two things that were chosen for you. Alas, you have no control over them. Your dissolution strategy is $strategy, and you (if:$instance)[did](else:)[didn&#39;t] fork before heading to the exhibition.
+
 The interesting part about writing is that, sometimes your characters pick up traits from you, and sometimes you from them. More often the former than the latter, of course, but one\
-(if:$dead and $prime)[ [[never knows.-&gt;/dev/null]]]
+(if:$dead and $prime)[ [[never knows.-&gt;/dev/null]](set: $devnull to true)]
 (else:)[ [[never knows.-&gt;Return]]]</tw-passagedata>
 <tw-passagedata pid="19" name="knocked out" tags="" position="1400,600">(set:$knockedout to true)\
+&lt;style&gt;
+body {
+	background-color: #000;
+	transition: all 1s linear;
+}
+tw-story {
+	color: #aaa;
+	transition: all 1s linear;
+}
+&lt;/style&gt;\
+\
 (link-reveal:&quot;Blackness.&quot;)[
 
 But not quite just blackness. A blackness filled with stars. (link-reveal:&quot;Only those are also black.&quot;)[
@@ -467,8 +523,14 @@ The stars are swept away by a steadily extanding yellow sun, which then has its 
 
 (link:&quot;And then...&quot;)[
 
-(either:(goto:&quot;Out on the street once more&quot;), (goto:&quot;Small exhibits&quot;), &quot;[[Dying is quite painful, you find]]&quot;)
-]]]</tw-passagedata>
+(either:(goto:&quot;Out on the street once more&quot;), (goto:&quot;Small exhibits&quot;), &quot;(link-goto:\&quot;Something deeper\&quot;, \&quot;Dying is quite painful, you find\&quot;)&quot;)
+]]]
+
+&lt;!--
+[[Small exhibits]]
+[[Out on the street once more]]
+[[Dying is quite painful, you find]] 
+--&gt;</tw-passagedata>
 <tw-passagedata pid="20" name="Dying is quite painful, you find" tags="" position="1400,800">(set:$dead to true)\
 &lt;style&gt;
 body {
@@ -481,7 +543,7 @@ tw-story {
 }
 &lt;/style&gt;\
 \
-Dying is quite painful, you find. Your instance, this body, is crashing in spectacular fashion. Every last bit of your sensorium is lit up like a Christmas tree, but the pain goes beyond that. It&#39;s a pain of existence, of the need to continue existing.
+Dying is no quiet affair, you find. Your instance, this body, is crashing in spectacular fashion. Every last bit of your sensorium is lit up like a Christmas tree, but the pain goes beyond that. It&#39;s a pain of existence, of the need to continue existing.
 
 Perhaps this is why you were instructed to send a forked instance.(if:$prime)[
 
@@ -493,9 +555,7 @@ You saw the credits. Are you hoping for an (link-reveal:&quot;end scene?&quot;)[
 
 Who knows how long you&#39;ll keep having to (link-reveal:&quot;return.&quot;)[(either:&quot;(goto:$beginningPassage)&quot;, &quot;(goto:$knockedoutPassage)&quot;, &quot;(goto-url:$outsidePassage)&quot;, &quot;&quot;)
 
-No matter what, though, (link:$beginning)[Dear will be waiting].
-
-]]</tw-passagedata>
+No matter what, though, (link-goto:$beginning)[Dear will be waiting]. Waiting to play with you, its toys, its media. Waiting to watch, to explore, to fight and love and tease and ignore.]]</tw-passagedata>
 <tw-passagedata pid="22" name="All alone" tags="" position="250,1200">(set: $noFennec to true)\
 &lt;style&gt;
 body {
@@ -546,7 +606,7 @@ There&#39;s the hillock. The one with the [[cave-&gt;Cave]]. ]]</tw-passagedata>
 	(set: $devnull to false)
 	(set: $instance to (either:true, false))
 	(set: $prime to not $instance)
-	(set: $strategy to (either:&quot;tracker&quot;, &quot;tasker&quot;))
+	(set: $strategy to (either:&quot;Tracker&quot;, &quot;Tasker&quot;))
 	(set: $fromCave to false)
 	(set: $wandererSeen to false)
 	(set: $knockedout to false)
@@ -611,11 +671,102 @@ tw-story {
 }
 &lt;/style&gt;\
 \
-Lovey dovey foxes
-unfinished
+You shrug. Carefully, though, as you&#39;re finding yourself loath to displace Dear&#39;s paw from atop your hand. &quot;Sure, why not? Came for the exhibition, after all. Why not get the most of it.&quot;
 
-[[Small exhibits]] </tw-passagedata>
-<tw-passagedata pid="29" name="Fight" tags="" position="1400,400">&lt;style&gt;
+You shrug once more, this time to your group. You make no sign of getting up.
+
+They hesitate for a moment, then, frowning, give a dismissive gesture and wander off to the next room.
+
+&quot;So. Fennecs.&quot;
+
+*&quot;Fennecs,&quot;* Dear agrees. *&quot;Though one must be careful to specify anthropomorphic. Real fennecs are quite small.&quot;*
+
+Dear forks and a fennec &amp;mdash; hardly a double-handful of fuzzy critter &amp;mdash; appears between you, bridging your knees, back paws on Dear&#39;s knee and front paws on yours. It&#39;s tan, rather than iridescent white, and holds far less humanity about it.
+
+You raise a hand, but it quits (link-reveal:&quot;before you can touch it.&quot;)[
+
+*&quot;This is intentional. I&#39;m not a fennec. I rather like them, of course, but I&#39;m not one. I&#39;m an amalgam. I&#39;m something more. Or rather, we all are, and I&#39;m trying to embody it.&quot;*
+
+&quot;So you&#39;re greater than the sum of the parts,&quot; you hazard. &quot;Fennec and human?&quot;
+
+*&quot;It&#39;d be better to say that we&#39;re all more than human. We may be post-human, as the old saws would have it, but we&#39;re certainly now more than the sum of the parts of our identities.&quot;* It grins, *&quot;Fennec mostly just because I like it, though. All the deep words in the world won&#39;t hide that fact.&quot;*
+
+You laugh, giving its paw a pat with your free hand, &quot;Well, hey, if it fits.&quot;
+
+Dear grins, *&quot;Think it does?&quot;*
+
+&quot;Well, sure. Just got me wondering what you get out of it.&quot;
+
+You feel your hand drop as the fennec turns up the sensitivity of its instance and turns down the rather conservative settings of the collision detection algorithms. You hesitate for the moment, then do the same, feeling the concommitant sensations of temperature and touch jump in intensity.
+
+*&quot;Well, I get to be soft as hell.&quot;* It grins, *&quot;Seriously, pet me. I love being a fox sometimes if only for the physical contact.&quot;*
+
+You laugh, although (link-reveal:&quot;you feel yourself blushing as well.&quot;)[ After a moment&#39;s hesitation, you pet Dear&#39;s paw lightly with your hand.
+
+It&#39;s soft. *Very* soft. You keep up the soft pets. It&#39;s hard to remember the last time you touched fur.
+
+*&quot;All of my intellectual bullshit aside, I think it&#39;s very important to remember the sensuality of sense.&quot;* Its eyes half-close in apparent pleasure. *&quot;When the system was built, there was a big debate as to whether sensoria should be included at all. Some of the more romantic uploads argued loud enough that we overrode most of the objections. Pet my ears, those are softer.&quot;*
+
+You move to comply, then pause, tilting your head. &quot;&#39;We&#39;?&quot; you ask, finishing the motion and brushing your fingertips over the back of one of the ears once. Then again and again. Dear wasn&#39;t kidding about the softness.
+
+You suspect it was a selfish request on its part, as the fox ducks its chin to tilt its head toward your hands, leaning in closer.
+
+*&quot;&#39;We&#39;, yes,&quot;* it murmurs, somewhat muffled. *&quot;The Ode Clade is quite old.&quot;*
+
+You think for a moment, then grin. &quot;You describe them as romantic, but talk of moving past romantic ideas of self.&quot;
+
+*&quot;Do I contradict myself?&quot;* It&#39;s mumbling quietly now. *&quot;Very well, then I contradict myself, I am large, I contain multitudes. Other ear, if you please.&quot;*
+
+(link-reveal:&quot;You laugh, earnestly and easily.&quot;)[ You slip your other hand from under Dear&#39;s paw, and bring it up to stroke the back of the other ear. The touch gets a shiver out of the fennec.
+
+&quot;Fennec fits,&quot; you say. &quot;Or, at least, soft animal does. You seem to act a little like how they say cats acted, though.&quot;
+
+*&quot;Meow,&quot;* Dear offers, too content to sound sarcastic. *&quot;Seriously. There&#39;s room for romanticism and romance itself within post-modernism.&quot;*
+
+You move the hand that was stroking the first ear to ruffle the fur between the ears, laughing again. &quot;Romance, eh? You coming on to me, then?&quot;
+
+It laughs and shrugs, *&quot;Well, more like...you&#39;re the first one to show interest in me, rather than the exhibition. And I&#39;ve run lots of exhibitions.&quot;*
+
+Moving gracefully, it leans forward, up onto its knees, and then in against your front, pushing you back against the armrest of the loveseat. Its arms slip up around your shoulders. The move startles you into hesitation, but after a moment, you settle your arms around the fox&#39;s shoulders.
+
+*&quot;But I&#39;m not **not** coming on to you.&quot;*
+
+You&#39;re at a loss for (link:&quot;words.&quot;)[(link:&quot;words. \&quot;I&#39;m flattered, but-\&quot;&quot;)[(link:&quot;words. \&quot;You&#39;re sweet, you know that?\&quot;&quot;)[(link-reveal:&quot;words.&quot;)[
+
+You settle for simply relaxing beneath Dear.
+
+Warmth, softness. &quot;Lonely?&quot;
+
+Dear settles with its muzzle resting alongside your neck. *&quot;Mmhm.&quot;*
+
+&quot;Same here,&quot; you offer.
+
+The fennec nuzzles in against your neck. Whiskers tickle, raise goosebumps.
+
+A moment of shared silence and touch. Your hands brush along the fox&#39;s back, imagining how soft the fur might be beneath the dressy shirt. Dear&#39;s blunt muzzle continues those soft rubs against your neck.
+
+It leans up, nuzzling its way to your ear.
+
+*&quot;The only downside to being a fox,&quot;* it murmurs, nose cool against the rim of your ear. *&quot;Is that it&#39;s really hard to kiss with a muzzle.&quot;*
+
+(link-reveal:&quot;And then it quits.&quot;)[
+
+Your arms collapse against your front, through the ephemeral outline of the fox that remains.
+
+With a shout, you scramble off of the loveseat, shock forcing you to stand in a defensive position.
+
+The air is cold after the contact.
+
+&quot;D-Dear?&quot; you stammer.
+
+(link-reveal:&quot;The room is empty.&quot;)[
+
+It takes a moment for you to remember that you&#39;re within a gallery exhibit. That Dear hung the frames in which you&#39;re the art.
+
+(link-reveal:&quot;You laugh, forced and bitter.&quot;)[ &quot;Lonely, indeed.&quot;
+
+You turn your touch sensoria way down and head to [[the door-&gt;Small exhibits]] ]]]]]]]]]]</tw-passagedata>
+<tw-passagedata pid="29" name="Fight" tags="" position="1200,400">&lt;style&gt;
 body {
 	background-color: #b55;
 	transition: all 1s linear;
@@ -626,11 +777,50 @@ tw-story {
 }
 &lt;/style&gt;\
 \
-unfinished
+The room into which you and this feral Dear fall is cylindrical. Walls of concrete, floor of packed dirt. the part of your mind still working on an intellectual level finds this funny, cliche.
 
-[[Small exhibits]] 
-[[knocked out]] </tw-passagedata>
-<tw-passagedata pid="30" name="Intro to fight" tags="" position="1100,400">(set:$fighter to true)\
+That&#39;s also the part of your mind that notices the default settings for sensoria in this room are much, much different than the previous room. Full sensation, with collision detection algorithms turned way down. A room set for battle.
+
+You grin. *Good,* you think. *Let it hurt. This &#39;exhibition&#39; goes way beyond what it should.*
+
+(link-reveal:&quot;Dear only growls.&quot;)[
+
+There&#39;s no circling, not yet. You two simply collide and have at each other. You with punching fists and knees attempting to find a groin (the fox is genderless, but perhaps that still hurts). Dear with blunt, scratching claws and not-so-blunt teeth.
+
+You have the advantage of size, and Dear has the advantage of teeth and claws worth weilding.
+
+It leads to an even draw in the first match, and thats when you fall back from each other and do the circling. Dear has lost all sense of humanity, to your eyes: hunched over like some werewolf out of a movie, fancy shirt torn, tail lashing about, claws and teeth bared, slavering.
+
+For your part, you fall back on what little you know of martial arts, mostly knowledge gleaned from watching movies. You keep your back away from the fox, keep your fists up to guard your face, keep slightly turned to minimize your profile.
+
+(link-reveal:&quot;You lunge.&quot;)[
+
+Dear lunges a heartbeat later, and you press your advantage with a kick. Your foot impacts the fox in the side, just above the pelvis.
+
+Dear lets out a satisfying and satisfyingly inhuman yelp of pain, collapsing on the dirt of the floor and whining for a moment.
+
+You move to kick it again, but it rolls to the side and staggers back to its feet, landing a good swipe of its claws along your cheek and up over your ear, tearing flesh.
+
+Shaking your head to try and dislodge the spinning sensation, you stumble back to press your back against the wall and gain yourself a moment.
+
+(link-reveal:&quot;Dear does not permit this.&quot;)[ The fox scrambles after you, deceptively quick, and leaps toward you, aiming to land with both its feet &amp;mdash; footpaws? &amp;mdash; and paws against you, mouth open wide as if to bite.
+
+You try to roll to the left but don&#39;t quite make it. Dear&#39;s right paw catches on your shoulder while it&#39;s left softens its landing against the concrete of the wall before latching up around your neck.
+
+It&#39;s an inopportune angle, but you feel it bite at you anyway, getting most of your shoulder at the base of your neck.
+
+The pain of it&#39;s teeth lodging in your skin is enough to make you cry out. Its got enough of your soft tissue in its muzzle that the contact is solid and, despite your attempts, you can&#39;t swing it free.
+
+You feel its right hand swing away and are too busy trying to gain the advantage to realize why until it swings back in front of you.
+
+(link-goto:&quot;When you see the syringe, you panic.&quot;, (either:&quot;You win&quot;, &quot;You lose&quot;))
+
+
+&lt;!--
+[[You win]] 
+[[You lose]]
+--&gt;]]]</tw-passagedata>
+<tw-passagedata pid="30" name="Intro to fight" tags="" position="1000,400">(set:$fighter to true)\
 &lt;style&gt;
 body {
 	background-color: #b88;
@@ -653,6 +843,108 @@ It lets you go and, in one complex motion, aims a punch at your jaw with one paw
 Something happens to the floor beneath your feet.
 
 [[You fall.-&gt;Fight]] </tw-passagedata>
+<tw-passagedata pid="31" name="To the small exhibits" tags="" position="800,800">You squirm a little in your seat, indecisive, then shake your head. &quot;I&#39;d better stick with the group. They look pissed.&quot;
+
+Dear laughs, *&quot;So they do. Well, fair enough. Feel free to look me up sometime, though. Goodness knows I have more thoughts on the matter.&quot;*
+
+At that, it quits, a faint echo of it lingering in the air, smiling to you.
+
+You stand and [[follow your friends.-&gt;Small exhibits]] </tw-passagedata>
+<tw-passagedata pid="32" name="You win" tags="" position="1200,600">&lt;style&gt;
+body {
+	background-color: #b55;
+	transition: all 1s linear;
+}
+tw-story {
+	color: #300;
+	transition: all 1s linear;
+}
+&lt;/style&gt;\
+\
+Moving faster than you thought you could, as though some latent instinct had kicked in, you swing your arm up across your front and strike Dear&#39;s forearm square on with the bony ridge of your own arm.
+
+(link-reveal:&quot;The syringe goes scattering.&quot;)[ You tear away from Dear and leap after it.
+
+Scrabbling on the ground, you catch sight of the syringe as it dematerializes.
+
+(link-reveal:&quot;Objects only do that when their owners quit.&quot;)[
+
+You whirl around just in time to see the hazy, ephemeral shadow of Dear fading away.
+
+The fox quit.
+
+(link-reveal:&quot;You let out a yell of triumph&quot;)[
+
+And now you&#39;re alone.
+
+You stumble back to the wall and sag against it, breathing heavily and assessing the damage. A few minor scratching here and there, and then the two major wounds: the scratch up along your cheek and across your ear and the bite against your neck with its several small puncture wounds.
+
+You set to work patching yourself. You fork from a point just before the fight, explain to the instance that you need to fix, that you&#39;d  like it to merge and retain all of your memories and experiences.
+
+This takes only a few seconds.
+
+(link-reveal:&quot;Once you&#39;re finished, another instance of Dear appears.&quot;)[ On closer inspection, it appears to be the original version of Dear. Dear-prime, or something.
+
+You&#39;ve calmed down enough that you don&#39;t immediately leap at it, though you do drop into a defensive stance.
+
+It smiles kindly, saying, *&quot;You may calm down, now.&quot;*
+
+&quot;Like hell,&quot; you growl.
+
+*&quot;No, seriously. Remember where you are. This is an exhibition. This is an exhibit.&quot;* It gestures to the room. *&quot;You&#39;re an audience member. Even audience members have roles to play.&quot;*
+
+You furrow your brow, &quot;Like a play...&quot;
+
+*&quot;Like a play.&quot;*
+
+&quot;So you knew we&#39;d fight?&quot;
+
+*&quot;I knew a fight might happen. I encouraged a fight to happen.&quot;*
+
+You raise your fists again, but you feel the changes in the room. Collision algorithms back on conservative, sensoria turned down. &quot;You encouraged a fight?&quot;
+
+*&quot;Mmhm.&quot;* Dear &amp;mdash; perhaps Dear-prime &amp;mdash; nods and strolls casually about the room. *&quot;You didn&#39;t make it to the unwinding room, so I&#39;ll explain here.
+
+&quot;Stress is the easiest way to force decisions to be made. I forced you to decide, didn&#39;t I? I forced you to interact with an instance, and I&#39;m forcing you to interact with me, now. Two instances, two interactions.&quot;*
+
+It walks over to a wall and gives it a push. A panel of concrete swings aside to reveal a set of stairs.  It gestures, smiling kindly. *&quot;There&#39;s more to it, but a good artist never explains. Artistry lies in the perception, and someone&#39;s watching.&quot;*
+
+At that, it quits.
+
+You drop your arms and sigh, thinking for a moment before [[heading for the stairs-&gt;Small exhibits]]. ]]]]</tw-passagedata>
+<tw-passagedata pid="33" name="You lose" tags="" position="1400,400">&lt;style&gt;
+body {
+	background-color: #b55;
+	transition: all 1s linear;
+}
+tw-story {
+	color: #300;
+	transition: all 1s linear;
+}
+&lt;/style&gt;\
+\
+You scramble frantically to get away from the fennec, but its grip around your neck with its arm and its teeth is (link-reveal:&quot;too strong.&quot;)[
+
+You raise both hands to block the syringe as it darts inward, hoping to either knock it out of Dear&#39;s paws or at least buy yourself some room to squirm away from the fox.
+
+(link-reveal:&quot;You&#39;re too slow, too sluggish.&quot;)[ After all, it doesn&#39;t matter where the syringe lands. It&#39;s only a sigil, an item holding a bunch of code.
+
+A bunch of code that will attempt to (link-reveal:&quot;crash your instance.&quot;)[
+
+The syringe strikes you square in the sternum just as you force Dear&#39;s arms away.
+
+(link-reveal:&quot;The fox immediately quits.&quot;)[
+
+(link-reveal:&quot;The world around you dissolves into voxels, each of which steadily gets larger and larger&quot;)[
+
+The voxels step down in intensity until they fade to a [[dull grey-&gt;knocked out]].
+
+ ]]]]]</tw-passagedata>
+<tw-passagedata pid="34" name="Include: The Wanderer" tags="" position="800,0">unfinished</tw-passagedata>
+<tw-passagedata pid="35" name="Include: The Rebel" tags="" position="950,0">unfinished</tw-passagedata>
+<tw-passagedata pid="36" name="Include: The Fighter" tags="" position="1100,0">unfinished</tw-passagedata>
+<tw-passagedata pid="37" name="Include: The Lover" tags="" position="1250,0">unfinished</tw-passagedata>
+<tw-passagedata pid="38" name="Include: The Medium" tags="" position="1400,0">unfinished</tw-passagedata>
 </tw-storydata>
 
 

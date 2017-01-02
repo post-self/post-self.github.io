@@ -43,6 +43,20 @@ There are two generally recognized merge strategies:
     * `theirs` --- when encountering a conflict, the conflicting portion of the halted instance's state is kept.
     * `ours` --- when encountering a conflict, the conflicting portion of the base instance's state is kept.
 
+### Fixes
+
+Fixing is a means of repairing damage to one's instance. Although no amount of damage suffered to the body will cause the instance to die, it might be preferable to not be broken. This is common for those who fight for enjoyment.
+
+Fixing involves forking from a previous moment, known as a checkpoint, instructing the new instance to perform a "fix", which is shorthand for a blithe merge with a `theirs` substrategy, and then quit. That means that the newly created (and fully intact) instance gains all of the memories, knowledge, experiences, and sensoria of the damaged instance.
+
+The new instance is effectively the old instance, just whole.
+
+### Syringes
+
+There are ways to modify one's instance in place, of course, and these are usually considered medical. To that end, code that modifies an instance tends to take the form of being bound to an object recognized as something medical: a syringe. It's a symbol, rather than something mechanical, which bears permissions to modify one's state.
+
+Although damage to instance bodies cannot lead to instance death, an instance crash is a good way to achieve the same goal. Effecting a crash is usually done with a bit of code. These are often attached to something well known to affect an instance, such as a syringe. During fighting with the intent to crash an instance, a syringe is the most common weapon.
+
 ### Exocortices
 
 Exocortices began as ways to store data in an easily accessible fashion for perusal later --- basically cellphones accessible through a neuro interface --- but the concept later transitioned into memory modules that weren't active until accessed directly. Things you could forget until deciding (or instructed) to remember.
