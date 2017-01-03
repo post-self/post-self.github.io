@@ -134,6 +134,11 @@ article {
         font-family: $sans-serif;
         font-size: 12px;
     }
+
+    img, svg {
+        max-width: 80%;
+        height: auto;
+    }
 }
 
 .entries {

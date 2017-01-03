@@ -32,7 +32,7 @@ Tracker-based, 'the Trackers'
 Dispersal, 'the Dispersionistas'
 :   instances are created on a whim or by accident, but unlike the managed strategies, they are not tracked, or not in a formal way. Instances may receive updates from each other, be friends and meet up with each other, or, rarely, become lovers. Those that stick together in some fashion may refer to themselves as a Clade, with their clade names using a common scheme. Any instance may fork, and reincorporating state is optional. This is the most radical of dissolution strategies, and is often seen as a minority, though actual numbers of personae groups are difficult to count.
 
-When an instance ends, there's the possibility of its state being merged with another instance's (common among the Taskers and Trackers, less so among the Dispersionistas). Merge there are several different merge strategies, and many may be discussed. Although there are trends mentioned below, there's little in the way of direct correlations between dissolution and merge strategies.
+When an instance ends, there's the possibility of its state being merged with another instance's (common among the Taskers and Trackers, less so among the Dispersionistas). There are several different merge strategies, and many may be discussed. Although there are trends mentioned below, there's little in the way of direct correlations between dissolution and merge strategies.
 
 There are two generally recognized merge strategies:
 
@@ -43,15 +43,57 @@ There are two generally recognized merge strategies:
     * `theirs` --- when encountering a conflict, the conflicting portion of the halted instance's state is kept.
     * `ours` --- when encountering a conflict, the conflicting portion of the base instance's state is kept.
 
+### Conflicts
+
+The further away from an instance is from another, whether in time or in forks, the more likely conflicts are, and the harder any merge becomes. Instances of separate individuals are, of course, so different as to be impossible to merge (though some are working on this).
+
+Consider the following:
+
+```
+a -+- - - -X
+    \     /
+     a' -/
+```
+
+Merge `X` is simple.
+
+```
+a -+- - - - - - -X
+    \           /
+     a' - - - -/
+```
+
+Merge `X` becomes more difficult with conflicts.
+
+```
+a -+- - - - - -X- -Y
+    \         /   /
+     a' -+- -/   /
+          \     /
+           a''-/
+```
+
+Merge `Y` gains conflicts due to split experiences and time. Merge `X` less so, but still more conflicts than merge `X` in the first example, due to time.
+
+```
+a - - - - -X- - -?
+    \     /     /
+     a' -      /
+              /
+b - - - - - -/
+```
+
+Merge `?` is impossible with the current state of technology. The two instances have no shared past instances on which to build a reasonable diff.
+
 ### Fixes
 
 Fixing is a means of repairing damage to one's instance. Although no amount of damage suffered to the body will cause the instance to die, it might be preferable to not be broken. This is common for those who fight for enjoyment.
 
-Fixing involves forking from a previous moment, known as a checkpoint, instructing the new instance to perform a "fix", which is shorthand for a blithe merge with a `theirs` substrategy, and then quit. That means that the newly created (and fully intact) instance gains all of the memories, knowledge, experiences, and sensoria of the damaged instance.
+Fixing involves forking from a previous moment, known as a checkpoint, instructing the new instance to perform a "fix", which is shorthand for a `blithe` merge with a `theirs` substrategy, and then quit. That means that the newly created (and fully intact) instance gains all of the memories, knowledge, experiences, and sensoria of the damaged instance.
 
 The new instance is effectively the old instance, just whole.
 
-### Syringes
+### Syringes and other symbolic objects
 
 There are ways to modify one's instance in place, of course, and these are usually considered medical. To that end, code that modifies an instance tends to take the form of being bound to an object recognized as something medical: a syringe. It's a symbol, rather than something mechanical, which bears permissions to modify one's state.
 

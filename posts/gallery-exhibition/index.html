@@ -48,7 +48,9 @@ tw-story {
 }
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 </script><tw-passagedata pid="1" name="A night out" tags="" position="200,200">A night on the town. A bar for an aperitif. A light dinner at a modern restaurant, one of those places that turns up the taste inputs and turns down the visual inputs, so that you eat intensely delicious food amidst a thick, purple fog. Another bar, livelier and less painfully, for a digestif.
@@ -500,8 +502,8 @@ There were two things that were chosen for you. Alas, you have no control over t
 
 The interesting part about writing is that, sometimes your characters pick up traits from you, and sometimes you from them. More often the former than the latter, of course, but one\
 (if:$dead and $prime)[ [[never knows.-&gt;/dev/null]](set: $devnull to true)]
-(else:)[ [[never knows.-&gt;Return]]]</tw-passagedata>
-<tw-passagedata pid="19" name="knocked out" tags="" position="1400,600">(set:$knockedout to true)\
+(else:)[ [[never knows.-&gt;Return]] ]</tw-passagedata>
+<tw-passagedata pid="19" name="knocked out" tags="" position="1400.0001,600">(set:$knockedout to true)\
 &lt;style&gt;
 body {
 	background-color: #000;
@@ -526,11 +528,13 @@ The stars are swept away by a steadily extanding yellow sun, which then has its 
 (either:(goto:&quot;Out on the street once more&quot;), (goto:&quot;Small exhibits&quot;), &quot;(link-goto:\&quot;Something deeper\&quot;, \&quot;Dying is quite painful, you find\&quot;)&quot;)
 ]]]
 
-&lt;!--
+(link-reveal:&quot;&quot;)[
+
 [[Small exhibits]]
 [[Out on the street once more]]
 [[Dying is quite painful, you find]] 
---&gt;</tw-passagedata>
+
+]</tw-passagedata>
 <tw-passagedata pid="20" name="Dying is quite painful, you find" tags="" position="1400,800">(set:$dead to true)\
 &lt;style&gt;
 body {
@@ -594,7 +598,11 @@ You stand back up once more and look straight ahead, in the direction the fennec
 There&#39;s the hillock. The one with the [[cave-&gt;Cave]]. ]]</tw-passagedata>
 <tw-passagedata pid="23" name="Dear, Also, The Tree That Was Felled - Gallery Exhibition" tags="" position="0,0">(goto:&quot;A night out&quot;)
 
-&lt;!-- This is done purely because the start passage doesn&#39;t align properlly --&gt;</tw-passagedata>
+(link-reveal:&quot;&quot;)[
+This is done purely because the start passage doesn&#39;t align properly
+
+[[A night out]]
+]</tw-passagedata>
 <tw-passagedata pid="24" name="Startup: Variable initialization" tags="startup" position="200,0">{
 	(set: $dead to false)
 	(set: $endings to 0)
@@ -815,11 +823,10 @@ You feel its right hand swing away and are too busy trying to gain the advantage
 
 (link-goto:&quot;When you see the syringe, you panic.&quot;, (either:&quot;You win&quot;, &quot;You lose&quot;))
 
-
-&lt;!--
+(link-reveal:&quot;&quot;)[
 [[You win]] 
 [[You lose]]
---&gt;]]]</tw-passagedata>
+]]]]</tw-passagedata>
 <tw-passagedata pid="30" name="Intro to fight" tags="" position="1000,400">(set:$fighter to true)\
 &lt;style&gt;
 body {
