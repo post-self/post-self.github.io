@@ -26,6 +26,8 @@ There are three generally recognized dissolution strategies:
 Task-based, 'the Taskers'
 :   instances are created only as needed for specific tasks and are tracked by a `#core`; as tasks are completed, instances are recycled and their state reincorporated with the `#core` instance. Non-`#core` instances never fork. This is the most common (and most conservative) as it tends to lead to less dilution of self.
 
+    A subset of the Taskers are the Conservatives. Conservatives believe that one should fork as little as possible, if at all.
+
 Tracker-based, 'the Trackers'
 :   instances are created on a whim, as needed, or by accident, and are tracked by a `#tracker` instance; when the instances end (through SIGHUP, SIGTERM, SIGQUIT or other such signals), their state is reincorporated with the `#tracker` instance. Non-`#tracker` instances never fork. This is the more liberal of the two most common strategies, as instances are considered basically independent personae.
 
