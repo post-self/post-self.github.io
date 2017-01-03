@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merging with the Truth
+title: Merge Conflicts with the Truth
 author: lorxus
 rating: green
 content_warnings:
