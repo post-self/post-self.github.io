@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gallery Exhibition: A Love Story
+title: "Gallery Exhibition: A Love Story"
 author: makyo
 rating: yellow
 content_warnings:
