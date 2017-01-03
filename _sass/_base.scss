@@ -119,13 +119,13 @@ article {
         }
 
         // Dedent first paragraph, and first paragraph after a horizontal rule
-        p:first-of-type, hr + p {
+        p:first-of-type, hr + p, p.license, pre p, .excerpt p {
             text-indent: 0;
+            margin-bottom: 0.5em;
         }
 
         p.license {
             margin-top: 2em;
-            text-indent: 0px;
             text-align: left;
         }
     }
@@ -311,8 +311,10 @@ article {
         }
     }
 
-    .post .content p {
-        text-indent: 2em;
+    .post .content {
+        p {
+            text-indent: 2em;
+        }
     }
 
     .entries {

@@ -6,6 +6,7 @@ rating: yellow
 content_warnings:
     - violence
     - cursing
+    - instance death
 ---
 
 > This gallery exhibition serves as the capstone for Dear, Also, The Tree That Was Felled, of the Ode Clade in its role as fellow. The fellowship in instance art was created specifically for Dear in recognition of the excellence it brings to the field.
@@ -20,3 +21,5 @@ This entry takes the form of a Twine game. There are choices to be made, and ran
 
 {% include posts/gallery-exhibition/map.svg %}
 Map generated with [twine2svg 0.0.1](https://github.com/makyo/twinedown).
+
+{% include license/cc-by-sa-4.0 author='Madison Scott-Clary' year='2016' %}

@@ -19,6 +19,11 @@ body {
     color: $light;
     font-family: $serif;
     line-height: 1.5;
+
+    *::selection {
+        color: $dark;
+        background-color: $light;
+    }
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -47,7 +52,7 @@ pre {
 
 code {
     @extend %callout;
-    padding: 3px;
+    padding: 0px;
 }
 
 hr {
