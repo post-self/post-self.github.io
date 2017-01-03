@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gallery Exhibition
+title: Gallery Exhibition: A Love Story
 author: makyo
 rating: yellow
 content_warnings:
@@ -16,7 +16,7 @@ content_warnings:
 
 ### [Play the game](/posts/gallery-exhibition/)
 
-This entry takes the form of a Twine game. Twine is a form of interactive fiction that you can play in your browser. It requires a modern browser with JavaScript enabled.
+This entry takes the form of a Twine game. There are choices to be made, and random chance at play. Twine is a form of interactive fiction that you can play in your browser. It requires a modern browser with JavaScript enabled. There are choices to be made, and random chance at play.
 
 {% include posts/gallery-exhibition/map.svg %}
 Map generated with [twine2svg 0.0.1](https://github.com/makyo/twinedown).
