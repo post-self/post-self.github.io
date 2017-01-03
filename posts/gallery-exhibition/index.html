@@ -407,35 +407,63 @@ tw-story {
 }
 &lt;/style&gt;\
 \
-(if: $fromCave)[(set:$wandererSeen to true, $fromCave to false)\
-Shaking dirt off your sleeves, you make your way up into a brightly lit room. Brightly lit and noisy. Your group of friends, looking a little haggard, gives a collective sigh of relief and helps to lift you up from what looks like a trapdoor in the floor.](else:)[You watch as, shaking dirt off their sleeves, another individual makes their way up into the brightly lit room. Brightly lit and noisy. Their group of friends, looking a little haggard, gives a collective sigh of relief and helps to lift them up from what looks like a trapdoor in the floor.]
+&lt;!-- your entries --&gt;\
+(if:$fromCave)[(set:$wanderer to true, $fromCave to false)\
+Shaking dirt off your sleeves, you make your way up into a brightly lit room. Brightly lit and noisy. Your group of friends, looking a little haggard, gives a collective sigh of relief and helps to lift you up from what looks like a trapdoor in the floor.]\
+(elseif:$fighter)[Your friends let out a surprised shout and race to greet you as step wearily up from the fight room, still shaken from coarse emotions and an unexpected battle. Battle! In a gallery! You shake your head as your friends ask for explanations.]\
+(elseif:$lover)[Numb &amp;mdash; or, that&#39;s not quite it, more like confused and in pain but unwilling to feel either &amp;mdash; you shuffle into the final room. Seeing the pointed ears of Dear over the heads of the crowd fills you with strangely shaped emotions, which you set aside and move to rejoin your friends. All of whom, it seems, are set on laughing at your expense.
 
-Dear lets folks wander
-unfinished
+Not helping.]
 
+&lt;!-- others&#39; entries--&gt;\
+(if:not $wanderer)[A group of audience members next to you gives a shout and jumps away from a spot in the floor as a panel begins a to lift up. A...trap door? From it, a ragged and slightly dirty looking head peeks up, and the group helps to lift the individual out of the hole beneath the floor. You try to get a peek of what&#39;s down the hole beneath the floor, but, other than dirt and rock, you don&#39;t see anything before it slams shut
+
+]\
+(if:not $fighter)[A panel in the side of the room gives way and folds back into a corridor.
+
+No, not a corridor, a staircase. From it steps another audience member, looking pale, shaken. They do not look as though tye would like to talk, though. Their friends look sullen at being rebuffed, but the audience member doesn&#39;t seem to care.
+
+]\
+(if:not $lover)[From the next room over, an audience member slouches back into the room. Confused, lost, upset. They make their way over to a laughing group of audience members &amp;mdash; their friends? &amp;mdash; and proceed to ignore them as hard as possible.
+
+]\
+Once all of the audience is brought back together in this whitewashed room, with its exposed ceiling, you hear Dear&#39;s kind voice waft above the heads, *&quot;The final room of the exhibition is not participatory. Please feel free to wander and explore. I-&quot;* It pauses, forks a few times, each instance smiling, and continues, *&quot;We will be available for questions and light chit-chat.
+
+&quot;Finally, I would like to thank you all from the bottom of my heart for attending this exhibition, and The Simien Fang School of Art and Design for hosting it. SF welcomes you back to any future exhibitions.&quot;*
+
+There is applause, then, but it&#39;s scattered, confused. Dear looks proud at this.
+
+You and your friends wander slowly through (link-reveal:&quot;the room.&quot;)[
+
+Its a square. Equidistant from the walls and each other are four pedestal, with one more a positioned at the center. Each pedestal is about waist-height and is just as white as the rest of the room. Images float a few inches from the top of the one nearest you, so you and your friends begin the circuit, wandering to inspect each pedestal in turn.
+
+Each is labled with a simple placard.
+-----
 ### The Wanderer
 
-(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Wanderer&quot;)]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Wanderer&quot;)
 
 ### The Rebel
 
-(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Rebel&quot;)]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Rebel&quot;)
 
 ### The Fighter
 
-(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Fighter&quot;)]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Fighter&quot;)
 
 ### The Lover
 
-(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Lover&quot;)]
+(link:&quot;Exhibit&quot;)[(display:&quot;Include: The Lover&quot;)
 
 ### The Medium
 
-(if: $endings is 0)[This exhibit appears to be an empty pedastal]
+(link:&quot;Exhibit&quot;)[(if: $endings is 0)[This exhibit appears to be an empty pedastal]
 (else:)[(display:&quot;Include: The Medium&quot;)]
+-----
+As the night winds down and your attention wanes, you and your friends offer weary looks to each other, finally heading [[out into the night once more]].
 
-[[Out on the street once more]]</tw-passagedata>
-<tw-passagedata pid="14" name="Out on the street once more" tags="" position="1200,1000">No one seems to have come out of the exhibit unscathed.(if:$knockedout)[(set:$knockedout to false)
+]]]]]]</tw-passagedata>
+<tw-passagedata pid="14" name="out into the night once more" tags="" position="1200,1000">No one seems to have come out of the exhibit unscathed.(if:$knockedout)[(set:$knockedout to false)
 
 Even you are having a hard time remembering how you got here.]
 
@@ -443,11 +471,12 @@ A few bear the rumpled look of the recently roughed-up, but with their safety tu
 
 In that, Dear, Also, The Tree That Was Felled was successful.
 
-You and your group walk to another bar. Quiet, subdued.
+You and your group walk to another bar. (link-reveal:&quot;Quiet, subdued.&quot;)[
 
 You give the low-slung building a wide berth.
 
-[[About]]</tw-passagedata>
+[[About]]
+]</tw-passagedata>
 <tw-passagedata pid="15" name="Cave" tags="" position="600,1000">As far as caves go, this one is rather (link-reveal:&quot;unremarkable.&quot;)[
 
 You laugh at yourself for having such a thought. The life you&#39;ve chosen for yourself does not include many caves.
@@ -489,9 +518,15 @@ The ground starts to rise, at least, and you think you may be nearing the other 
 
 (link-reveal:&quot;You hasten.&quot;)[
 
-(either: &quot;[[Up and out.-&gt;Small exhibits]]&quot;, &quot;[[And fall.-&gt;Out on the street once more]]&quot;)
+(either: &quot;[[Up and out.-&gt;Small exhibits]]&quot;, &quot;[[And fall.-&gt;out into the night once more]]&quot;)
 ]]]]</tw-passagedata>
-<tw-passagedata pid="18" name="About" tags="" position="1400,1000">(set: $endings to it + 1)\
+<tw-passagedata pid="18" name="About" tags="" position="1400.0001,1000">{
+	(set: $endings to it + 1)
+	(set: $wanderer to false)
+	(set: $fighter to false)
+	(set: $lover to false)
+	(set: $rebel to false)
+}\
 A Twine game by &lt;a href=&quot;http://post-self.io/about/contributors#makyo&quot;&gt;Madison Scott-Clary#makyo&lt;/a&gt;.
 
 &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-sa/4.0/80x15.png&quot; /&gt;&lt;/a&gt; This work is licensed under a &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;., and was written for the *Post-Self* project. *Post-Self* is a collaborative fiction project exploring what it would be like to live in a post-self universe, where the idea of singular selfhood is blurred and torn down.
@@ -531,7 +566,7 @@ The stars are swept away by a steadily extanding yellow sun, which then has its 
 (link-reveal:&quot;&quot;)[
 
 [[Small exhibits]]
-[[Out on the street once more]]
+[[out into the night once more]]
 [[Dying is quite painful, you find]] 
 
 ]</tw-passagedata>
@@ -616,7 +651,7 @@ This is done purely because the start passage doesn&#39;t align properly
 	(set: $prime to not $instance)
 	(set: $strategy to (either:&quot;Tracker&quot;, &quot;Tasker&quot;))
 	(set: $fromCave to false)
-	(set: $wandererSeen to false)
+	(set: $wanderer to false)
 	(set: $knockedout to false)
 	(set: $fighter to false)
 	(set: $lover to false)
@@ -646,7 +681,8 @@ Those memories that you hope someone will remember will be garbage collected and
 
 Ah well.</tw-passagedata>
 <tw-passagedata pid="26" name="Header: Life check" tags="header" position="400,0">(if:$devnull)[(goto:&quot;/dev/null&quot;)]</tw-passagedata>
-<tw-passagedata pid="27" name="Debug-header: Variables" tags="debug-header" position="600,0">{
+<tw-passagedata pid="27" name="Debug-header: Variables" tags="debug-header" position="600,0">(font:&#39;monospace&#39;)[
+{
 dead: (print: $dead) - 
 endings: (print: $endings) - 
 talkedWithFennec: (print: $talkedWithFennec) - 
@@ -659,12 +695,12 @@ instance: (print: $instance) -
 prime: (print: $prime) - 
 strategy: (print: $strategy) - 
 fromCave: (print: $fromCave) - 
-wandererSeen: (print: $wandererSeen) - 
+wanderer: (print: $wanderer) - 
 knockedout: (print: $knockedout) - 
 fighter: (print: $fighter) - 
 lover: (print: $lover) - 
-rebel: (print: $rebel) - 
-}
+rebel: (print: $rebel)
+}]
 -----
 </tw-passagedata>
 <tw-passagedata pid="28" name="Seduction" tags="" position="1000,600">(set: $lover to true)\
@@ -947,11 +983,319 @@ The syringe strikes you square in the sternum just as you force Dear&#39;s arms 
 The voxels step down in intensity until they fade to a [[dull grey-&gt;knocked out]].
 
  ]]]]]</tw-passagedata>
-<tw-passagedata pid="34" name="Include: The Wanderer" tags="" position="800,0">unfinished</tw-passagedata>
-<tw-passagedata pid="35" name="Include: The Rebel" tags="" position="950,0">unfinished</tw-passagedata>
-<tw-passagedata pid="36" name="Include: The Fighter" tags="" position="1100,0">unfinished</tw-passagedata>
-<tw-passagedata pid="37" name="Include: The Lover" tags="" position="1250,0">unfinished</tw-passagedata>
-<tw-passagedata pid="38" name="Include: The Medium" tags="" position="1400,0">unfinished</tw-passagedata>
+<tw-passagedata pid="34" name="Include: The Wanderer" tags="" position="800,0">(if:$wanderer)[It&#39;s a surreal experience, watching your self, your actions, through someone else&#39;s eyes. Sure, there are videos and such, but there&#39;s something a little different about this. The way the &#39;camera&#39; moves is...well, it&#39;s not a camera. There&#39;s no way it could be a camera.
+
+It has to be Dear.
+
+You watch more closely as the recording loops. It starts with a flash, a point of view very close to the ground. Lots of ankles. Shoes.
+
+Then it moves, quickly and jauntily, dashing among feet and shoes, pausing to look up into faces. Most give it only cursory glances, apparently unsure of how to take this tiny animal moving among them. A few refuse to look at it, clearly disconcerted.
+
+Then there&#39;s your face. You look more curious than anything, trying to figure out this thing before you. The you here, now, stares back into your eyes through the playback.
+
+You hold your breath.
+
+There&#39;s the explosion.
+
+The viewpoint skitters off to the side (lots of ankles here) and toward a wall. It seeks out the molding on the floor, then the corner where that meets the molding of a doorjamb. There&#39;s its place. It scrabbles at the door, waiting for you, knowing you&#39;ll come.
+
+And there&#39;s your shoes (with less dirt on them than they have now), and then the door swings open. The viewpoint leaps through, into sun and grass, with the shoes (and the rest of you) falling after.
+
+Until now, the playback had been silent, but directed speakers start to project a little bit of audio, muffled.
+
+*&quot;You&#39;re one tenacious fuck, you know that?&quot;* you hear the fennec&#39;s voice from the speakers. Everyone but you laughs.
+
+You hear your discussion with the fennec, heavily obscured by the crunching of grass and the occasional grunts from yourself as the two of you make your way through the field. Your discussion on the meaning of exhibit, of medium, of art versus frame.
+
+The video slides slowly lower to the ground as the fennec stretches out, then goes dark.
+
+Repeats.
+
+There&#39;s a touch of resentment, you feel. That Dear had somehow managed to record a portion of its sensorium (was that even possible?) and was playing it back to these strangers.
+
+But you look around you, and you see mostly thoughtful faces. A few have blanched, as they realize that they were on exhibit, not Dear.]\
+(else:)[On the pedestal is a recording, but it&#39;s shot from a strange angle. The camera moves...well, not like a camera.
+
+It has to be Dear.
+
+You watch more closely as the recording loops. It starts with a flash, a point of view very close to the ground. Lots of ankles. Shoes.
+
+Then it moves, quickly and jauntily, dashing among feet and shoes, pausing to look up into faces. Most give it only cursory glances, apparently unsure of how to take this tiny animal moving among them. A few refuse to look at it, clearly disconcerted.
+
+Then there&#39;s a notably different face. It looks more curious than anything, trying to figure out this thing before it.
+
+You hold your breath.
+
+There&#39;s the explosion.
+
+The viewpoint skitters off to the side (lots of ankles here) and toward a wall. It seeks out the molding on the floor, then the corner where that meets the molding of a doorjamb. There&#39;s its place. It scrabbles at the door, waiting for something, knowing it&#39;ll come.
+
+And there&#39;s those shoes shoes, the ones belonging to that curious face, and then the door swings open. The viewpoint leaps through, into sun and grass, with the shoes (and the rest of the audience member) falling after.
+
+Until now, the playback had been silent, but directed speakers start to project a little bit of audio, muffled.
+
+*&quot;You&#39;re one tenacious fuck, you know that?&quot;* you hear the fennec&#39;s voice from the speakers. Everyone laughs.
+
+You hear a discussion with the fennec, heavily obscured by the crunching of grass and the occasional grunts from yourself as the two make their way through the field. A discussion on the meaning of exhibit, of medium, of art versus frame.
+
+The video slides slowly lower to the ground as the fennec stretches out, then goes dark.
+
+Repeats.
+
+You look around you, and you see mostly thoughtful faces. A few have blanched, as they realize that they were on exhibit, not Dear.]</tw-passagedata>
+<tw-passagedata pid="35" name="Include: The Rebel" tags="" position="950,0">This pedestal contains a fairly short loop, more obviously taken from a conventional security feed.
+
+It&#39;s hard to discern what happens at first. It mostly looks like a bunch of people standing still, and then, as if on cue, freaking out.
+
+(if:$rebel)[A closer look, and you feel your cheeks go red. You know what&#39;s going to happen.
+
+There&#39;s you.
+
+And there&#39;s your forked instance.
+
+And there&#39;s Dear&#39;s forked instance.
+
+And then chaos as Dear deftly moves the room into strife.
+
+Then the recording loops.
+
+You swallow hard, knowing what&#39;s going to come next. You avert your gaze from the pedestal as you watch the chaos begin again. Your friends jeer at you, but you don&#39;t feel proud at having done what you did.]\
+(else:)[It takes a moment to really discern what happened, but then you see it.
+
+You wait for the video to cycle again and quickly locate the audience member who does it, who starts the fight. You see them fork, their instance appearing quite close to them.
+
+Then you see Dear&#39;s instance appear nearly overlapping with them, the collision detection algorithms forcing them apart. That feral Dear pressing the attack.
+
+The video&#39;s silent, but you can almost hear the shouts and ruckus.
+
+The audience member may have started the ruckus, but you&#39;re pretty sure it was Dear that orchestrated it.]</tw-passagedata>
+<tw-passagedata pid="36" name="Include: The Fighter" tags="" position="1100,0">(if:$fighter)[As you catch a glimpse of the next pedestal on approach you wince, both at remembered pain embarrassment.
+
+The scene in this pedestal shows fighting, chaos.
+
+Once again, this appears to be a sensorium recording (how had Dear *done* that?), showing a fight that&#39;s far more well-choreographed than you remember. Seeing it from Dear&#39;s point of view, it looks a lot more like purposeful herding. The safety settings on that room had been so high that that&#39;s about all it had been.
+
+Then the instance&#39;s point of view gets whipped around to face you, your face squarely in its vision.
+
+&quot;What the fuck do you think you&#39;re doing?!&quot; You wince at the sound of your voice, hoarse from excitement, profane, coming from those directed speakers.
+
+Then the fight begins in earnest.
+
+You&#39;re dragged to the center of the room of the fight and then dropped into the ring, those concrete walls and that dirt floor making your remembered wounds ache.
+
+This fight is less well choreographed. More jagged.
+
+Except to you. You know.
+
+The details play out on the pedestal with a cool, almost clinical precision, holding none of the emotion that you had felt. The blows, the circling, the jumps and scratches.
+
+The syringe.
+
+*&quot;I had to mean to do it,&quot;* says a soft voice next to you.
+
+The fight isn&#39;t so far off that you don&#39;t still have a strong urge to deck the fox standing in front of you.
+
+It smiles, almost sadly. *&quot;If I didn&#39;t mean to do it, you would have been confused. Maybe there would be victory, but it would&#39;ve been empty.&quot;* Dear shrugs, offers an apologetic smile. *&quot;Confusion is not what was called for, in this exhibit.&quot;*
+
+You take a breath. One of those intentional breaths, the ones where you breathe out longer than you breathe in. &quot;I think I understand why you did it,&quot; you say, quiet and controlled. &quot;I don&#39;t like it, but I think I understand why.&quot;
+
+Dear nods, offers a hit of a bow, and backs away, *&quot;That&#39;s my job&quot;*
+
+It retreats into the crowd.]\
+(else:)[The scene in this pedestal shows fighting, chaos.
+
+Once again, this appears to be a sensorium recording (how had Dear *done* that?), showing a fight that&#39;s far more well-choreographed than you remember. Seeing it from Dear&#39;s point of view, it looks a lot more like purposeful herding. The safety settings on that room had been so high that that&#39;s about all it had been.
+
+Then the instance&#39;s point of view gets whipped around to face someone, their face squarely in its vision.
+
+&quot;What the fuck do you think you&#39;re doing?!&quot; The voice is hoarse from excitement, profane, coming from those directed speakers.
+
+Then the fight begins in earnest.
+
+The audience member is dragged to the center of the room of the fight and then both Dear and the fighter are dropped into the ring, a cylindrical room with concrete walls and a packed dirt floor.
+
+This fight is less well choreographed. More jagged.
+
+Except to you. You know.
+
+The details play out on the pedestal with a cool, almost clinical precision, holding emotionless energy. The blows, the circling, the jumps and scratches.
+
+The syringe.
+
+The other audience members around the pedestal gasp quietly as the syringe is weilded by a paw, weilded against that audience member.
+
+The struggle lasts only a second or two longer before the video loops.
+
+There&#39;s no conclusion.]</tw-passagedata>
+<tw-passagedata pid="37" name="Include: The Lover" tags="" position="1250,0">(if:$lover)[Seeing the cool blue hues of the scene above the next pedestal brings an immediate and intense reaction. It feels like you swallowed a ball the size of your fists and it&#39;s lodged itself behind your rib cage.
+
+Embarrassment. Frustration. Anger. Loneliness. All in equal measurement.
+
+It makes you queasy.
+
+You approach the pedestal just as the loop begins again.
+
+Once again, you&#39;re viewing a scene from Dear&#39;s point of view.
+
+*&quot;We can stay and chat a bit more,&quot;* the fox says. *&quot;Don&#39;t worry, I&#39;m running this show, I make the rules.&quot;*
+
+You watch yourself shrug, say, &quot;Sure, why not? Came for the exhibition, after all. Why not get the most of it.&quot;
+
+When the instance of Dear looks around, you see that the room is almost empty, the last folks, your friends, drifting out the door.
+
+The conversation that follows is low on intensity and high on subtle, emotional cues. You watch yourself and the fox have a slow and easy conversation about &#39;why&#39;s.
+
+The image of Dear looks down, and you see that it&#39;s paw is resting atop yours.
+
+You clench your fists.
+
+You know that that instance was designed specifically to be likable, approachable. The big eyes, the softened gaze, the larger ears. You know that you walked right into that.
+
+But hey, you were lonely and honest.
+
+That feeling in your chest becomes a constriction, frustration and loneliness winning out.
+
+You watch the whole scene again, this time from the other point of view. You watch your own face as it slowly opens up, as you discuss being a fox, sensoria, romanticism and romance.
+
+You watch as the point of view rises, leans in closer to the you pictured there on the pedestal, watch as it leans in close, into a hug far more intimate than one would expect from someone one had just met, two bars worth of drinks aside.
+
+The viewpoint switches to somewhere above the fox and yourself on the couch, though the audio stays close by.
+
+*&quot;The only downside to being a fox,&quot;* says the instance of Dear, and you turn around as casually as possible so that you don&#39;t have to watch. *&quot;Is that it&#39;s really hard to kiss with a muzzle&quot;*
+
+There&#39;s Dear, in front of you.
+
+Not the softened overly-kind dear from the blue room. Just normal Dear. Well, &#39;normal&#39;. Dear-prime.
+
+It&#39;s good because you figure the sight of the kind-Dear would&#39;ve made you quite upset.
+
+*&quot;Was that unfair of me?&quot;* it asks. It&#39;s done something to the room &amp;mdash; unsurprising that it would have admin privileges in its own gallery &amp;mdash; the two of you are in a cone of silence.
+
+&quot;I...well, yes.&quot; You try and count the layers of remove from the reality of what you had experienced, try to calculate the cuils in your head. The experience, the exhibit on the pedestal, talking to the artist.
+
+You shake your head. Dear waits.
+
+&quot;I&#39;d say you did an admirable job with the exhibition.&quot;
+
+*&quot;Admirable?&quot;* It tilts his head, looking almost canine in that moment. *&quot;I set up a situation &amp;mdash; several, really &amp;mdash; in which audience members feel emotions toward ephemeral constructs and made it art. I don&#39;t know if that&#39;s admirable. It&#39;s just art.&quot;*
+
+You begin to reply, but it cuts you short.
+
+*&quot;I&#39;m an artist, but that&#39;s what I do. I&#39;m a person, though.&quot;* Its grin looks weary, *&quot;Also a fox-person. And I feel like I cut too deep with that one. Was that unfair of me?&quot;*
+
+Your shoulders sag. Dear waits.
+
+&quot;I don&#39;t know,&quot; you admit. &quot;I had a few drinks, the exhibit was stressful, was supposed to be stressful like you said. Just...it may have been an act, but I fell for it pretty hard.&quot;
+
+Dear waits.
+
+&quot;Look, it&#39;s just silly, is all. I don&#39;t even know why it affected me so much,&quot; you trail off, trying to decide how much further to go on. &quot;Look,&quot; you repeat, shaking your head. &quot;Was it true? What you said? Are you lonely? Were you earnest?&quot;
+
+Dear nods, simple and straightforward. *&quot;It&#39;s perhaps easy for me to talk about because I rehearsed hard for this shit, but yeah, I&#39;m lonely as hell. I fork to form relationships and keep myself...I mean, I don&#39;t lie in my work if I can help it.&quot;*
+
+It&#39;s your turn to wait, which discomfits Dear.
+
+*&quot;I&#39;m sorry,&quot;* it says. *&quot;I did cut too deep. Wasn&#39;t thinking. It&#39;s not my goal with these things to damage anyone&#39;s trust in instances or in me. It&#39;s just that I don&#39;t make art because I know why. If I knew why, I wouldn&#39;t need to make art.&quot;*
+
+The fox hesitates for a moment, then sighs. *&quot;I feel really bad about this. I&#39;m sorry, and I&#39;d like to do what I can to regain your trust.&quot;*
+
+The weight of decision hangs heavy around your neck, heavy enough to bow your head. There&#39;s very little you feel you can say without making that decision right then, so you stay silent for a moment.
+
+Finally, &quot;I feel like you&#39;re trying to ask me out.&quot;
+
+*&quot;I&#39;m not not asking you out,&quot;* Dear smiles faintly.
+
+So do you.
+
+&quot;Listen, can you give me a night? Lemme put some thought into it.&quot;
+
+It nods. *&quot;Fair. And listen, I really am sorry. There are bits of this show that I wrote thinking that they&#39;d lead to one thing, some spectacular art, and they led to, er, this.&quot;*
+
+You nod, saying, &quot;I get that. Kind of like a choose-your-own-adventure story that got a little out of hand.&quot;
+
+Dear shrugs, *&quot;I guess.&quot;* It hesitates for a moment, then draws a card out of it&#39;s left pocket, reaching out with its right paw at the same time, a perfectly formal business card exchange.
+
+You grin and, on a whim, turn down your touch sensoria way up to accept the card &amp;mdash; a flash of contact information and locations &amp;mdash; and shake the fox&#39;s paw.
+
+It&#39;s *very* soft.]\
+(else:)[A view of relaxing blue hues fills the next pedestal.
+
+Once again, you&#39;re viewing a scene from Dear&#39;s point of view.
+
+*&quot;We can stay and chat a bit more,&quot;* the fox says. *&quot;Don&#39;t worry, I&#39;m running this show, I make the rules.&quot;*
+
+The person filling the viewport shrugs, says, &quot;Sure, why not? Came for the exhibition, after all. Why not get the most of it.&quot;
+
+They shrug once more, this time off &#39;camera&#39;. When Dear looks around, you see that the room is almost empty, the last folks (perhaps those the audience member was shrugging at?) drifting out the door.
+
+The conversation that follows is low on intensity and high on subtle, emotional cues. You watch the audience member and the fox have a slow and easy conversation about &#39;why&#39;s.
+
+Dear looks down, and you see that it&#39;s paw is resting atop the audience member&#39;s hand, and you realize that there&#39;s another layer going on here.
+
+This doubles as Dear instructs the audience member to pet its paw. You suspect, and their reaction confirms, that sensorium intensity has been turned up.
+
+As free as society is, especially in these circles, it&#39;s still uncomfortable watching affection, touch, and flirting.
+
+Second-hand embarrassment leads to second-hand blushing when the recording of Dear leans forward to hug itself against the surprised audience member and says, *&quot;I&#39;m not not coming on to you.&quot;*
+
+It&#39;s almost a struggle to keep watching. They talk of loneliness. They talk earnestly. You wonder why Dear included this private moment in the exhibit.
+
+The viewpoint shifts to up high, somewhere on the ceiling, but audio remains close to the pair. Perhaps a microphone in the couch.
+
+*&quot;The only downside to being a fox is that it&#39;s really hard to kiss with a muzzle,&quot;* Dear says, and then quits.
+
+The audience surrounding the pedestal gasps as the audience member in the scene lets out a surprised shout and jumps up from their spot on the couch. They quest about frantically, looking more than a little upset at the sudden disappearance.
+
+&quot;The instances aren&#39;t the art,&quot; one of your friends mumbles, and you turn to them. They shrug. &quot;I don&#39;t think so at least. I don&#39;t actually know what the art is.&quot;
+
+Someone from across the pedestal offers, &quot;Maybe instances are the brush?&quot;
+
+Laughter.
+
+*&quot;Instances the brush, emotion the paint,&quot;* says a soft voice. Dear stands attentively nearby. *&quot;The art is...experiences?&quot;*
+
+&quot;Was that a question?&quot; you ask.
+
+Dear shrugs. *&quot;I don&#39;t make art because I know why,&quot;* it says, bemused. *&quot;If I knew why, I wouldn&#39;t need to make art, then, would I?&quot;*
+
+&quot;So you&#39;re a romantic?&quot;
+
+*&quot;Perhaps you should go back and watch the scene again.&quot;*]</tw-passagedata>
+<tw-passagedata pid="38" name="Include: The Medium" tags="" position="1400,0">The fifth pedestal, the one in the center of the room, is (print:$endings+1) recordings playing at once.
+
+They all feature you. They all feature the things that you did during your time here in the exhibition. All of those sly forks and subtle mergers.
+
+*&quot;Did you think I did not know?&quot;* a soft voice says beside you.
+
+You feel a heat rise to your cheeks. &quot;I...I mean, I didn&#39;t-&quot;
+
+Dear holds up a paw, indicating silence. It seems fond of the gesture. *&quot;I knew.&quot;* It smiles. You find it a touch odd that the smile is simple and kind, not sly and knowing, not triumphant, and you&#39;re not sure why. *&quot;I knew, I expected.&quot;*
+
+&quot;Is it okay?&quot;
+
+Dear laughs. *&quot;Of course it is! This is a show on instance art. That&#39;s why it&#39;s expected. That&#39;s why there&#39;s five small exhibits here, not four.&quot;*
+
+You smile tentatively.
+
+*&quot;That was a rather Dispersionista thing to do for a $strategy.&quot;*
+
+&quot;I may have had a few drinks before.&quot;
+
+*&quot;I suspect a good many of those here did.&quot;*
+
+&quot;So why did you allow it?&quot;
+
+Dear spreads its hands in a graceful gesture before clasping them at its front once more. Its tail, you notice, is swaying behind it, steady. *&quot;You and I have talked about this.&quot;*
+
+&quot;I suppose we have,&quot; you mumble, still sorting through the merged memories.
+
+*&quot;SF calls me an instance artist. Hell, I call myself an instance artist. I&#39;m closer to a director, though. I organize the stage, the crew &amp;mdash; even if they&#39;re all me &amp;mdash; and the choreography. You&#39;re the art though. I won&#39;t say audience, or actors. I don&#39;t like the play metaphor all that much, since the art isn&#39;t in the acting. There is no acting.&quot;*  It shrugs, *&quot;But the metaphor will serve.&quot;*
+
+You nod, watching the multiple feeds play out in their own courses.
+
+After a few silent moments together, you ask Dear, &quot;What are we supposed to do with our experiences here?&quot;
+
+Dear grins. *&quot;This isn&#39;t a lecture. No classroom, no notes, no papers to write. It&#39;s not a tool that you take away to use,&quot;* it pauses, that grin going sly. *&quot;And even if it were, that&#39;s your fucking job, not mine.&quot;*</tw-passagedata>
 </tw-storydata>
 
 

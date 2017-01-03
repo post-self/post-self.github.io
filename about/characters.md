@@ -30,7 +30,8 @@ Occupation
 :   Dear is an instance artist. It gains reputation by doing neat things with instances and recording, writing about, and otherwise disseminating its experiences. It has lately been experimenting with different ways of making its sensorium abstract enough to allow others to merge it or its created instances. Keep it on the down-low, but it has also been attempting to hack a means of octopus merging, allowing multiple instances to be merged into a new and completely different instance.
 
 Entries
-:   *None yet*
+:  
+    * [Gallery Exhibition](/entry/gallery-exhibition/)
 
 ### Ioan Balan
 
@@ -50,7 +51,8 @@ Occupation
 :   Writer, blogger, and historian.
 
 Entries
-:   *None yet*
+:  
+    * [The Assignment](/entry/assignment/)
 
 ### {% include names/qian-guowei %}
 {: id="qian-guowei" }
