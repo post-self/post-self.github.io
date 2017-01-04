@@ -95,6 +95,26 @@ Fixing involves forking from a previous moment, known as a checkpoint, instructi
 
 The new instance is effectively the old instance, just whole.
 
+### Families and clades
+
+Families form just as often in the system as outside, of course. People fall in love, get married, have affairs, get divorced. It's all there. Children are a slightly more difficult question. They could be constructed, with an AI which incorporates aspects of sensoria from both 'parents'. Species-wide aversions (to which posthumans are not immune) leave many feeling wary of these constructed children, though. They do not age - no one does in system, except to project the outward appearance of aging - and they are not, in some minds, even human with their base template of an AI. Many would feel that they would be in some way lacking. All the same, several exist and move, unnoticed, through society.
+
+Clades are the collection of instances forked (at any depth) from a common ancestor, an upload. Clades vary by dissolution strategy:
+
+* Taskers attempt to maintain the smallest clade possible, with Conservatives obviously striving for a clade with one member
+* Trackers may have several members in their clades, but their clades rarely expand beyond a certain point
+* Dispersionistas have the largest clades, which often go unmeasured in terms of size. They're usually thought of as increasing in an exponential fashion, though this is not quite true, as it's usually assumed that Dispersionistas are loathe to quit, signal, or otherwise merge
+
+### Quitting and signals
+
+Instances may end three ways:
+
+* Quitting - an instance may choose to quit at any time.
+* Signals - the instance's parent from which it was forked may send a signal to the instance, such as SIGQUIT or SIGTERM. If an instance is unresponsive or out of control, the user may send SIGKILL, though they won't get much back during merging
+* Crashing - instance crashes are very rare and are considered an emergency for the system maintainers. A crash may be induced through a virus, as outlined below
+
+Instances may only merge when one of them ends. In git parlance, one may only merge commits, and the only commit available is when an instance ends. To achieve long-running mergeable instances, the long-running instance will fork, and then the new instance will quit and the sensoria will be merged down-tree as far as needed.
+
 ### Syringes and other symbolic objects
 
 There are ways to modify one's instance in place, of course, and these are usually considered medical. To that end, code that modifies an instance tends to take the form of being bound to an object recognized as something medical: a syringe. It's a symbol, rather than something mechanical, which bears permissions to modify one's state.
