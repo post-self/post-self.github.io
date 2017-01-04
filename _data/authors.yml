@@ -17,9 +17,9 @@ lorxus:
   name: Paul Rapoport#lorxus
   metadata:
     - type: twitter
-    value: coronacoreanici
+      value: coronacoreanici
     - type: website
-    value: http://lorx.us
+      value: http://lorx.us
     strategies:
       dissolution: Tracker
       merge: blithe-ours
