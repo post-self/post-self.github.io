@@ -12,6 +12,18 @@
 #   * website
 #
 # Keep this file ordered alphabetically by username. A suggestion, given the style in which branches are notated in the PS universe, would be to structure the name entry as "Proper Name#username" and mention instances in your bio.
+lorxus:
+  uri: http://post-self.io/about/contributors#lorxus
+  name: Paul Rapoport#lorxus
+  metadata:
+    - type: twitter
+    value: coronacoreanici
+    - type: website
+    value: http://lorx.us
+    strategies:
+      dissolution: Tracker
+      merge: blithe-ours
+      bio: '*coming soon*'
 makyo:
   uri: http://post-self.io/about/contributors#makyo
   name: Madison Scott-Clary#makyo
@@ -27,15 +39,3 @@ makyo:
     merge: experiential cherrypick
   bio: |
     Madison is an author, programmer, and composer living outside of Loveland, CO. She's decidedly trans, aggressively poly, kinda ace, and hecka queer. This instance spends her time writing and thinking about furry, postfurry, and community when not working in tech.
-lorxus:
-  uri: http://post-self.io/about/contributors#lorxus
-  name: Paul Rapoport#lorxus
-  metadata:
-    - type: twitter
-      value: coronacoreanici
-    - type: website
-      value: http://lorx.us
-  strategies:
-    dissolution: Tracker
-    merge: blithe-ours
-  bio: '*coming soon*'
