@@ -20,10 +20,10 @@ lorxus:
       value: coronacoreanici
     - type: website
       value: http://lorx.us
-    strategies:
-      dissolution: Tracker
-      merge: blithe-ours
-      bio: '*coming soon*'
+  strategies:
+    dissolution: Tracker
+    merge: blithe-ours
+    bio: '*coming soon*'
 makyo:
   uri: http://post-self.io/about/contributors#makyo
   name: Madison Scott-Clary#makyo
