@@ -21,7 +21,7 @@ Pronouns
 :   [it/it/its/itself](http://pronoun.is/it)
 
 Appearance
-:   Dear's instance is modeled after that of a now-extinct animal known as a fennec fox, a member of the vulpine family adapted to desert living. Dear has modified the original form to be more akin to that of humans. The iridescent white fur appears to have been a happy mistake.
+:   Dear's instance is modeled after that of a now-extinct animal known as a fennec fox, a member of the vulpine family adapted to desert living. Dear has modified the original form to be more akin to that of humans. The iridescent white fur appears to have been a happy mistake. It speaks in italics, no one knows how.
 
 Dissolution strategy
 :   Dispersionista
