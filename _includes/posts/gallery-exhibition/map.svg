@@ -1,178 +1,178 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1710" height="1310" viewbox="0 0 1710 1310">
-  <!-- Genereated with twine2svg 0.0.1 -->
+  <!-- Genereated with twine2svg 0.0.2 -->
   <style>  .twine .passage rect {
-    fill: #333;
-    stroke: #eee;
+    fill: transparent;
+    stroke: currentColor;
     stroke-width: 2px;
   }
   .twine .passage.start rect {
     stroke-width: 4px;
   }
   .twine .link {
-    stroke: #eee;
+    stroke: currentColor;
     stroke-width: 2px;
   }
   .twine text {
-    fill: #eee;
+    fill: currentColor;
   }
 </style>
   <g class="twine">
-    <path class="link" d="M254 254 L 454 254 M454 254 L 654 254 M454 254 L 454 454 M454 454 L 454 654 M654 254 L 854 254 M654 254 L 654 454 M454 654 L 654 654 M454 654 L 304 854 M854 254 L 854 454 M654 454 L 854 454 M854 454 L 1054 454 M854 454 L 854 654 M304 854 L 454 1054 M304 854 L 304 1254 M654 654 L 854 454 M454 1054 L 654 1054 M854 654 L 1054 654 M854 654 L 854 854 M1054 854 L 1254 1054 M1254 1054 L 1454 1054 M654 1054 L 854 1054 M854 1054 L 1054 1054 M1054 1054 L 1054 854 M1054 1054 L 1254 1054 M1454 1054 L 1454 1254 M1454 1054 L 1654 1054 M1454 654 L 1054 854 M1454 654 L 1254 1054 M1454 654 L 1454 854 M1454 854 L 1454 1054 M304 1254 L 654 1054 M54 54 L 254 254 M1054 654 L 1054 854 M1254 454 L 1254 654 M1254 454 L 1454 454 M1054 454 L 1254 454 M854 854 L 1054 854 M1254 654 L 1054 854 M1454 454 L 1454 654"/>
+    <path class="link" d="M304 254 L 404 254 M504 254 L 604 254 M454 304 L 454 404 M454 504 L 454 604 M704 254 L 804 254 M654 304 L 654 404 M504 654 L 604 654 M406 702 L 352 806 M854 304 L 854 404 M704 454 L 804 454 M904 454 L 1004 454 M854 504 L 854 604 M304 904 L 304 1204 M352 902 L 406 1006 M702 606 L 806 502 M504 1054 L 604 1054 M904 654 L 1004 654 M854 704 L 854 804 M1102 902 L 1206 1006 M1304 1054 L 1404 1054 M704 1054 L 804 1054 M904 1054 L 1004 1054 M1054 1004 L 1054 904 M1104 1054 L 1204 1054 M1454 1104 L 1454 1204 M1504 1054 L 1604 1054 M1404 654 L 1104 854 M1404 654 L 1254 1004 M1454 704 L 1454 804 M1454 904 L 1454 1004 M354 1254 L 606 1102 M102 102 L 206 206 M1054 704 L 1054 804 M1254 504 L 1254 604 M1304 454 L 1404 454 M1104 454 L 1204 454 M904 854 L 1004 854 M1206 702 L 1102 806 M1454 504 L 1454 604"/>
     <g class="passage">
       <title>A night out</title>
-      <rect x="204" y="204" width="100" height="100"/>
+      <rect x="204" y="204" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>An Introduction To and By The Artist</title>
-      <rect x="404" y="204" width="100" height="100"/>
+      <rect x="404" y="204" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>through the right door</title>
-      <rect x="404" y="404" width="100" height="100"/>
+      <rect x="404" y="404" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>through the left-hand door</title>
-      <rect x="604" y="204" width="100" height="100"/>
+      <rect x="604" y="204" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>an animal attempting to escape</title>
-      <rect x="404" y="604" width="100" height="100"/>
+      <rect x="404" y="604" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>forking</title>
-      <rect x="804" y="204" width="100" height="100"/>
+      <rect x="804" y="204" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>stay intact</title>
-      <rect x="604" y="404" width="100" height="100"/>
+      <rect x="604" y="404" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Fight room</title>
-      <rect x="804" y="404" width="100" height="100"/>
+      <rect x="804" y="404" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Follow the fennec</title>
-      <rect x="254" y="804" width="100" height="100"/>
+      <rect x="254" y="804" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Escape to fight room</title>
-      <rect x="604" y="604" width="100" height="100"/>
+      <rect x="604" y="604" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Wide open spaces</title>
-      <rect x="404" y="1004" width="100" height="100"/>
+      <rect x="404" y="1004" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Unwind room</title>
-      <rect x="804" y="604" width="100" height="100"/>
+      <rect x="804" y="604" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Small exhibits</title>
-      <rect x="1004" y="804" width="100" height="100"/>
+      <rect x="1004" y="804" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>out into the night once more</title>
-      <rect x="1204" y="1004" width="100" height="100"/>
+      <rect x="1204" y="1004" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Cave</title>
-      <rect x="604" y="1004" width="100" height="100"/>
+      <rect x="604" y="1004" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Cramped spaces</title>
-      <rect x="804" y="1004" width="100" height="100"/>
+      <rect x="804" y="1004" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Up and through</title>
-      <rect x="1004" y="1004" width="100" height="100"/>
+      <rect x="1004" y="1004" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>About</title>
-      <rect x="1404" y="1004" width="100" height="100"/>
+      <rect x="1404" y="1004" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>knocked out</title>
-      <rect x="1404" y="604" width="100" height="100"/>
+      <rect x="1404" y="604" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Dying is quite painful, you find</title>
-      <rect x="1404" y="804" width="100" height="100"/>
+      <rect x="1404" y="804" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Return</title>
-      <rect x="1404" y="1204" width="100" height="100"/>
+      <rect x="1404" y="1204" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>All alone</title>
-      <rect x="254" y="1204" width="100" height="100"/>
+      <rect x="254" y="1204" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage start">
       <title>Dear, Also, The Tree That Was Felled - Gallery Exhibition</title>
-      <rect x="4" y="4" width="100" height="100"/>
+      <rect x="4" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Startup: Variable initialization</title>
-      <rect x="204" y="4" width="100" height="100"/>
+      <rect x="204" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>/dev/null</title>
-      <rect x="1604" y="1004" width="100" height="100"/>
+      <rect x="1604" y="1004" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Header: Life check</title>
-      <rect x="404" y="4" width="100" height="100"/>
+      <rect x="404" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Debug-header: Variables</title>
-      <rect x="804" y="4" width="100" height="100"/>
+      <rect x="804" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Seduction</title>
-      <rect x="1004" y="604" width="100" height="100"/>
+      <rect x="1004" y="604" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Fight</title>
-      <rect x="1204" y="404" width="100" height="100"/>
+      <rect x="1204" y="404" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Intro to fight</title>
-      <rect x="1004" y="404" width="100" height="100"/>
+      <rect x="1004" y="404" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>To the small exhibits</title>
-      <rect x="804" y="804" width="100" height="100"/>
+      <rect x="804" y="804" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>You win</title>
-      <rect x="1204" y="604" width="100" height="100"/>
+      <rect x="1204" y="604" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>You lose</title>
-      <rect x="1404" y="404" width="100" height="100"/>
+      <rect x="1404" y="404" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Include: The Wanderer</title>
-      <rect x="1004" y="4" width="100" height="100"/>
+      <rect x="1004" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Include: The Rebel</title>
-      <rect x="1154" y="4" width="100" height="100"/>
+      <rect x="1154" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Include: The Fighter</title>
-      <rect x="1304" y="4" width="100" height="100"/>
+      <rect x="1304" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Include: The Lover</title>
-      <rect x="1454" y="4" width="100" height="100"/>
+      <rect x="1454" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Include: The Medium</title>
-      <rect x="1604" y="4" width="100" height="100"/>
+      <rect x="1604" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
     <g class="passage">
       <title>Debug-startup: Variable initialization</title>
-      <rect x="604" y="4" width="100" height="100"/>
+      <rect x="604" y="4" rx="5" ry="5" width="100" height="100"/>
     </g>
   </g>
 </svg>
