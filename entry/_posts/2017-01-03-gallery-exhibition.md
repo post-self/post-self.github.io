@@ -20,6 +20,6 @@ content_warnings:
 This entry takes the form of a Twine game. There are choices to be made, and random chance at play. Twine is a form of interactive fiction that you can play in your browser. It requires a modern browser with JavaScript enabled.
 
 {% include posts/gallery-exhibition/map.svg %}
-Map generated with [twine2svg 0.0.1](https://github.com/makyo/twinedown).
+Map generated with [twine2svg](https://github.com/makyo/twinedown).
 
 {% include license/cc-by-sa-4.0 author='Madison Scott-Clary' year='2016' %}
