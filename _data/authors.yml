@@ -35,7 +35,7 @@ lorxus:
   strategies:
     dissolution: Tracker
     merge: blithe-ours
-    bio: '*coming soon*'
+  bio: '*coming soon*'
 makyo:
   uri: http://post-self.io/about/contributors#makyo
   name: Madison Scott-Clary#makyo
