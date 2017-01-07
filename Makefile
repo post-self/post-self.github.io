@@ -47,7 +47,8 @@ check-ratings: ## Check that each entry has a valid rating.
 	@ echo
 
 .PHONY: lint
-lint: ## Check that all generated HTML files are well-formed.
+lint: ## Check that all generated HTML files are well-formed and that jekyll is happy.
+	bundle exec jekyll hyde
 	bundle exec htmlproofer _site \
 		--check-favicon \
 		--check-html \
