@@ -12,6 +12,18 @@
 #   * website
 #
 # Keep this file ordered alphabetically by username. A suggestion, given the style in which branches are notated in the PS universe, would be to structure the name entry as "Proper Name#username" and mention instances in your bio.
+
+emanatehieromech: 
+  uri: http://post-self.io/about/contributors#emanatehieromech
+  name: Emanate Hieromech#emanatehieromech
+  metadata:
+    - type: twitter
+      value: hieromech
+  strategies:
+    dissolution: Dispersionist%Variant(Divisionist)
+    merge: blithe-theirs/cherrypicking-experiential(Hybrid)
+    bio: |
+    Emanate is an author, symbol-engineer, transhuman-hopeful, glow-aesthete, music-bender, and cosmalia curator in Seattle, WA. They are also trans, non-binary, kinky, poly, queer, postfurry, and a terrible punster. Their preferred pronouns are either [ve/ver/vis or they/them](http://pronoun.is/ve/ver?or=they “prounous”) They do not, despite the newly-acquired github account, actually work in tech or programming. :-}.
 lorxus:
   uri: http://post-self.io/about/contributors#lorxus
   name: Paul Rapoport#lorxus
