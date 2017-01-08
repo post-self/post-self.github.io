@@ -1,5 +1,3 @@
-# Provided to satisfy cats
-
 .PHONY: help
 help: ## This help.
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -13,24 +11,26 @@ check: check-ratings check-permalinks lint ## Check the site for ratings, permal
 
 .PHONY: build
 build: ## Build the site into the default location (_site/)
-	bundle exec jekyll build --verbose
+	bundle exec jekyll build --verbose --future
 
 .PHONY: check-permalinks
 check-permalinks: build ## Check that each entry builds its own unique permalink.
 	@ echo
 	@ echo "Checking for duplicate permalinks..."
-	# Ensure that each post generates its own index.html file
+	# Simple check that each post generates its own index.html file
+	# Looks to make sure that there aren't more sources than destinations, but
+	# cannot test for category indices.
 	@ ( \
 	src=`find entry/_posts -name "????-??-??-*.*" | wc -l`; \
 	dest=`find _site/entry -name index.html | wc -l`; \
-	if [ $$src -ne $$dest ]; then \
+	if [ $$src -gt $$dest ]; then \
 		echo "!!! Source was $$src"; \
 		echo "!!! Dest was   $$dest"; \
 		echo "!!! Mismatched source and dest entries; maybe a duplicate permalink?"; \
 		exit 1; \
 	fi \
 	)
-	@ echo "No duplicates found, but that was a simple test. Check by hand!"
+	@ echo "No duplicates found, but that was a naive test. Check by hand!"
 	@ echo
 
 .PHONY: check-ratings
@@ -47,7 +47,7 @@ check-ratings: ## Check that each entry has a valid rating.
 	@ echo
 
 .PHONY: lint
-lint: ## Check that all generated HTML files are well-formed and that jekyll is happy.
+lint: ## Check that all generated HTML files are well-formed.
 	bundle exec jekyll hyde
 	bundle exec htmlproofer _site \
 		--check-favicon \
