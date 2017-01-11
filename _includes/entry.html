@@ -19,7 +19,7 @@
         </span>
     </div>
 
-    <div class="excerpt">{{ include.post.excerpt }}</div>
+    <div class="excerpt">{{ include.post.excerpt|markdownify }}</div>
 
     <p class="more"><em><a href="{{ include.post.url }}">Read more</a></em></p>
 </div>
