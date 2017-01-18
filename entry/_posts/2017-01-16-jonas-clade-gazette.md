@@ -3,6 +3,8 @@ layout: post
 title: The Jonas Clade Digest
 author: makyo
 rating: green
+content_warnings:
+    - explicit language
 excerpt: |
     Updates from the Jonas clade for the Jonas clade. Jonas Prime requests that all instances report in when they're able. One must keep oneself up to date, after all.
 ---
