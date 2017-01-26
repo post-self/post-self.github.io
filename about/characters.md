@@ -32,6 +32,7 @@ Occupation
 Entries
 :  
     * [Gallery Exhibition](/entry/gallery-exhibition/)
+    * [Qoheleth](/entry/qoheleth/)
 
 ### Ioan Balan
 
@@ -53,6 +54,7 @@ Occupation
 Entries
 :  
     * [The Assignment](/entry/assignment/)
+    * [Qoheleth](/entry/qoheleth/)
 
 ### {% include names/qian-guowei %}
 {: id="qian-guowei" }
@@ -81,4 +83,5 @@ Meta
     * `{% raw %}{{ site.data.characters.qian-guowei.name.zh }}{% endraw %}` - {{ site.data.characters.qian-guowei.name.zh }}
 
 Entries
-:   *None yet*
+:  
+    * [Qoheleth](/entry/qoheleth/)

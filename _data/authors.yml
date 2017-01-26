@@ -35,7 +35,8 @@ lorxus:
   strategies:
     dissolution: Tracker
     merge: blithe-ours
-  bio: '*coming soon*'
+  bio: |
+    Paul is a mathematician, graduate student, teacher, and fox, living in Chicago, Illinois. He loves to listen to overly intense music, distractedly ponder the universe's mysteries, explore, and spread the light of knowledge to everyone who can't get away fast enough. This instance, a relatively new fork tasked with exploring lorxus's general creative potential, will spend their time writing poetry and short fiction.
 makyo:
   uri: http://post-self.io/about/contributors#makyo
   name: Madison Scott-Clary#makyo
