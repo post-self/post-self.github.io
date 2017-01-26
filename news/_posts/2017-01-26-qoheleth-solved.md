@@ -11,6 +11,6 @@ Qoheleth was an ARG, or Alternate Reality Game, which took place primarily onlin
 
 [Riismo](/about/contributors#riismo) poked and prowled and hunted down all of Old Man Qoheleth's clues and gathered up the rest of the story for us. The full story will go up in a bit, but Qoheleth the ARG will remain in place for a while, for anyone who wants to give it a go.
 
-For those who don't want to give it a go but are still curious as to how it was run, all of the information involved is [here](https://github.com/but-death-must/qoheleth/), with a full breakdown in [index.md](https://github.com/but-death-must/qoheleth/blob/master/index.md). Note, however, that this effectively spoils the entire game, so if you want to play, don't look!
+For those who don't want to give it a go but are still curious as to how it was run, all of the information involved is [here](https://github.com/makyo/qoheleth/), with a full breakdown in [index.md](https://github.com/makyo/qoheleth/blob/master/index.md). Note, however, that this effectively spoils the entire game, so if you want to play, don't look!
 
 There may be more like this, but for now, hats off to Riismo, and thanks for playing `:)`
