@@ -51,3 +51,14 @@ makyo:
     merge: experiential cherrypick
   bio: |
     Madison is an author, programmer, and composer living outside of Loveland, CO. She's decidedly trans, aggressively poly, kinda ace, and hecka queer. This instance spends her time writing and thinking about furry, postfurry, and community when not working in tech.
+riismo:
+  url: http://post-self.io/about/contributors#riismo
+  name: Riismo#riismo
+  metadata:
+    - type: twitter
+      value: riismo
+  strategies:
+    dissolution: Tracker
+    merge: blithe-ours
+  bio: |
+    Riismo is an engineer and ne'er-do-well from New England. He enjoys breaking things and (time permitting) fixing them, which is an approach that works more often than it ought to and at least is interesting when it doesn't. He's also a furry, and on most days a rather grumpy one.
