@@ -7,7 +7,7 @@ title: Resources
 
 ### GitHub Pages
 
-* [Jekyll](https://jekyllrb.com)
+* [Jekyll](https://jekyllrb.com/)
 * [Supported programming languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
 * [Supported plugins](https://pages.github.com/versions/)
 
