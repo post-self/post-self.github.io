@@ -13,7 +13,7 @@ title: Characters
 {: class="clearfix" }
 
 Name
-:   Dear, Also, The Tree That Was Felled -  of the Ode Clade
+:   Dear, Also, The Tree That Was Felled --- of the Ode Clade
 
     Or just Dear.
 
@@ -22,6 +22,9 @@ Pronouns
 
 Appearance
 :   Dear's instance is modeled after that of a now-extinct animal known as a fennec fox, a member of the vulpine family adapted to desert living. Dear has modified the original form to be more akin to that of humans. The iridescent white fur appears to have been a happy mistake. It speaks in italics, no one knows how.
+
+Reference
+:   ![Dear, Also, The Tree That Was Felled --- of the Ode Clade](/about/refs/dear.jpg)
 
 Dissolution strategy
 :   Dispersionista
